@@ -1,0 +1,29 @@
+{
+  "name": "angular-admin",
+  "version": "1.0.0",
+  "description": "A angular1.x Admin",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singcl/angular-new.git"
+  },
+  "keywords": [
+    "angular",
+    "admin"
+  ],
+  "author": "singcl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/singcl/angular-new/issues"
+  },
+  "devDependencies": {
+    "http-server": "0.9.0"
+  },
+  "homepage": "https://github.com/singcl/angular-new#readme"
+}
