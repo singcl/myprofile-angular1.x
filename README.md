@@ -1,4 +1,4 @@
-# Hello Angular [![bitHound Score][bithound-img]][bithound-url]
+# Hello Angular
 
 A Angular 1.x Andmin
 
