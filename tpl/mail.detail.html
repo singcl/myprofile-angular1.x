@@ -1,0 +1,94 @@
+<div ng-controller="MailDetailCtrl">
+	<!-- header -->
+	<div class="wrapper b-b bg-light lter">
+		<a href ui-sref="app.mail.list({fold:''})" class="btn btn-sm btn-default w-xxs m-r-sm" tooltip="返回上页"><i class="fa fa-arrow-circle-left"></i></a>
+		<div class="btn-group m-r-sm">
+			<button class="btn btn-sm btn-default w-xxs w-auto-xs" tooltip="完成" tooltip-append-to-body=true>
+				<i class=" fa fa-archive"></i>
+			</button>
+			<button class="btn btn-sm btn-default w-xxs w-auto-xs" tooltip="举报" tooltip-append-to-body=true>
+				<i class=" fa fa-exclamation-circle"></i>
+			</button>
+			<button class="btn btn-sm btn-default w-xxs w-auto-xs" tooltip="删除" tooltip-append-to-body=true>
+				<i class=" fa fa-trash-o"></i>
+			</button>
+			<!-- tooltip-append-to-body=true  用来解决当提示工具或者弹框在按钮组或者输入组中时出现的
+			一些意想不到的bug，如border-radius消失、元素变宽等 。 如果使用的是bootstrap的tooltip
+			插件而不是ui-bootstrap指令的话 那么就必须在tooltip初始化的时候添加container:"body"-选项
+			如：$("[data-toggle='tooltip']").tooltip({container:"body"});-->
+		</div>
+		<div class="btn-group">
+			<div class="btn-group dropdown" dropdown>
+				<button class="btn btn-sm btn-default w-xxs w-auto-xs dropdown-toggle" tooltip="文件" 
+				tooltip-append-to-body=true dropdown-toggle>
+					<i class="fa fa-fw fa-folder"></i>
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href>垃圾邮件</a></li>
+					<li><a href>其他</a></li>
+				</ul>
+			</div>
+			<div class="btn-group dropdown" dropdown>
+				<button class="btn btn-sm btn-default w-xxs w-auto-xs dropdown-toggle" tooltip="标签" dropdown-toggle>
+					<i class="fa fa-fw fa-tag"></i>
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li ng-repeat="label in labels">
+					    <a href>
+					        <i class="fa fa-fw fa-circle text-muted text-xs " color="{{label.color}}" label-color></i>
+					        {{label.name}}
+					    </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- main -->
+	<div class="wrapper b-b">
+		<h2 class="font-thin m-n">{{mail.subject}}</h2>
+	</div>
+	<div class="wrapper b-b">
+		<img ng-src="{{mail.avatar}}" class="img-circle thumb-xs m-r-sm">
+		来自<a href>{{mail.from}}</a>的邮件 时间：{{mail.date}}
+	</div>
+	<div class="wrapper">
+		{{mail.content}}
+	</div>
+	<div class="wrapper">
+		<div ng-repeat= "attach in mail.attach" class="inline panel b-a m-r-sm m-b-sm bg-light">
+			<div class="wrapper-xs b-b "><i class="fa fa-paperclip"></i>{{attach.name}}</div>
+			<div class="wrapper-xs w-sm lt">
+				<a ng-href="{{attach.url}}"><img ng-src="{{attach.url}}" class="img-full"></a>
+
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="panel b-a">
+			<div class="panel-heading ng-hide" ng-show="!!reply">
+				<div class="m-b-lg">
+					点击这里<a href class="text-u-l" ng-click="reply=!reply">回复</a>或者<a href class="text-u-l" ng-click="reply=!reply">转发</a>
+				</div>
+			</div>
+			<div class="ng-show panel-body" ng-hide="!!reply">
+				<div class="panel-heading b-b b-light">
+					{{mail.from}}
+				</div>
+				<!-- <div class="wrapper" contenteditable="true" style="min-height: 100px;"></div> -->
+				<div class="wrapper editor-father" initialize-wang-editor>
+					<div id="reply" name="reply"></div>
+				</div>
+				<div class="panel-footer bg-light lt">
+					<button class="btn btn-link pull-right" ng-click="reply=!reply">
+						<i class="fa fa-trash-o"></i>
+					</button>
+					<button class="btn btn-info w-xs font-bold">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /main -->
+</div>

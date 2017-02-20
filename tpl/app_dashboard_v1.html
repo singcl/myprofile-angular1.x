@@ -1,0 +1,678 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded=fasle;
+    app.settings.asideDock=false 
+">
+    <!-- main -->
+    <div class="col">
+        <!--  main header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h1 class="m-n font-thin h3 text-black">版本</h1>
+                    <small class="text-muted" >自己创建的Angular应用</small>
+                </div>
+                <div class="col-sm-6 text-right hidden-xs">
+                    <div class="inline m-r text-left">
+                        <div class="m-b-xs">
+                            flot
+                            <span class="text-muted">demo</span>
+                        </div>
+                        <div ng-init="data1=[ 88,100,110,110,87,109,105,87,65,43,56,100,105,102,77,99,35 ]" 
+                        ui-jq="sparkline"
+                        ui-options="{{data1}}, {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}"
+                        class="sparkline inline">loading...
+                        </div>
+                    </div>
+                    <div class="inline text-left">
+                        <div class="m-b-xs">
+                            flot
+                            <span class="text-muted">demo</span>
+                        </div>
+                        <div ng-init="data2=[ 105,102,106,107,105,104,101,99,98,109,105,100,108,110,105,110,109 ]" 
+                         ui-jq="sparkline" 
+                         ui-options="{{data2}}, {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}" 
+                         class="sparkline inline">loading...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  /main header -->
+
+        <!--  main body -->
+        <div class="wrapper-md" ng-controller="FlotChartDemoCtrl">
+           <!--  start -->
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row row-sm text-center">
+                        <div class="col-xs-6">
+                            <div class="panel padder-v item">
+                                <div class="h1 text-info font-thin">MHD</div>
+                                <span class="text-muted text-xs">应用</span>
+                                <div class="top text-right w-full">
+                                    <i class="fa fa-caret-down text-info m-r-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href class=" block panel padder-v bg-primary item">
+                                <span class="block text-white font-thin h1">888</span>
+                                <span class="text-muted text-xs">上传</span>
+                                <span class="bottom text-right w-full">
+                                    <i class="fa fa-cloud-upload text-muted m-r-sm"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href class=" block panel padder-v bg-info item">
+                                <span class="block text-white font-thin h1">666</span>
+                                <span class="text-muted text-xs">评论</span>
+                                <span class="top text-left w-full">
+                                    <i class="fa fa-caret-down text-warning m-l-sm"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href class=" block panel padder-v bg-orange item">
+                                <span class="block text-white font-thin h1">123</span>
+                                <span class="text-muted text-xs">反馈</span>
+                                <span class="bottom text-left w-full">
+                                    <i class="fa fa-caret-up text-warning m-l-sm"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 m-b-md">
+                            <div class="hbox bg-light dker no-border r item">
+                                <div class="col w-xs v-middle hidden-md">
+                                    <div ng-init="data2=[80,15,5]" ui-jq="sparkline"
+                                      ui-options="data2,{
+                                      type:'pie',
+                                      height:60,
+                                      sliceColors:['#3de1ad','#e29c45','#fff']
+                                      }" class="sparkline inline"></div>
+                                </div>
+                                <div class="col dk padder-v r-r">
+                                    <div class="text-primary-dk font-thin h1">
+                                        <span>Learning</span>
+                                    </div>
+                                    <span class="text-muted text-xs">easyPieChart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-7">
+                   <div class="wrapper panel">
+                        <h4 class="font-thin m-t-none m-b">Web Knowledge</h4>
+                        <div class="">
+                            <div class="">
+                                <span class="pull-right text-primary">85%</span>
+                                <span>HTML</span>
+                            </div>
+                            <progressbar value="85" class="progress-xs m-t-sm bg-white active progress-striped" animate="true" type="primary"></progressbar>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <span class="pull-right text-info"> 85%</span>
+                                <span>CSS</span>
+                            </div>
+                            <progressbar value="85" class="progress-xs m-t-sx bg-white active progress-striped" animate="true" type="info"></progressbar>
+                        </div>
+                        <div class="">
+                            <div class="">
+                              <span class="pull-right text-warning"> 79%</span>
+                              <span>Javascript</span>
+                            </div>
+                            <progressbar value="79" class="progress-xs m-t-sx bg-white active progress-striped" animate="true" type="warning"></progressbar>
+                        </div>
+                        <div class="">
+                            <div class="">
+                              <span class="pull-right text-danger"> 79%</span>
+                              <span>Jqery</span>
+                            </div>
+                            <progressbar value="79" class="progress-xs m-t-sx bg-white active progress-striped" animate="true" type="danger"></progressbar>
+                        </div>
+                        <p class="text-muted">
+                          Tips：永无止境的学习可以帮组我们不断提高。
+                        </p>    
+                    </div>
+                </div>
+            </div>
+            <!--  start -->
+
+            <!-- service -->
+            <div class="panel hbox hbox-auto-xs np-border">
+                <div class="col wrapper">
+                    <i class="fa fa-circle-o text-info m-r-sm pull-right"></i>
+                    <h4 class="font-thin m-b-none m-t-none text-primary-lt">Learning Flot</h4>
+                    <span class="block m-b text-sm text-muted">随机生成数据。</span>
+                    <div ui-jq="plot" ui-options="
+                      [
+                        {
+                          data:{{d4}},
+                          lines:{
+                            show: true,
+                            lineWidth: 1,
+                            fill: true,
+                            fillColor: {
+                              colors:[{opacity: 0.3},{opacity: 0.9}]
+                            }
+                          }
+                        }
+                      ],
+                      {
+                        colors:['{{app.color.lilac}}'],
+                        series:{shadowSize: 3},
+                        xaxis:{show:false},
+                        yaxis:{font:{color: '#a1a7ac'}},
+                        grid: { 
+                          hoverable: true, 
+                          clickable: true, 
+                          borderWidth: 0, 
+                          color: '#dce5ec'
+                        },
+                        tooltip:true,
+                        tooltipOpts: {
+                          content: '%s of %x.1 is %y.4',
+                          defaultTheme: false,
+                          shifts: { x: 10, y: -25}
+                        }
+                      }"
+                    style="height: 240px;">  
+                    </div>
+                </div>
+                <div class="col wrapper r-r">
+                    <label class="i-switch bg-lilac pull-right" ng-init="showSpline=true">
+                        <input type="checkbox" ng-model="showSpline">
+                        <i></i>
+                      </label>
+                      <h4 class="font-thin m-b m-t-none text-muted">Learning flot</h4>
+                       <div ui-jq="plot" ui-refresh="showSpline" ui-options="
+                         [
+                          { data: {{d0_1}}, label:'TV', points: { show: true, radius: 1} },
+                          { data: {{d0_2}}, label:'Mag', points: { show: true, radius: 1} }
+                         ], 
+                         {
+                          colors: ['{{app.color.info}}', '{{app.color.primary}}'],
+                          series: { 
+                              shadowSize: 3 ,
+                                splines:{ 
+                                  show: showSpline, 
+                                  tension: 0.4, lineWidth: 1, 
+                                  fill: 0.6 
+                                }
+                          },
+                          xaxis:{ font: { color: '#a1a7ac' } },
+                          yaxis:{ font: { color: '#a1a7ac' }, max:20 },
+                          grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#dce5ec' },
+                          tooltip: true,
+                          tooltipOpts: { content: 'Visits of %x.1 is %y.4',  defaultTheme: false, shifts: { x: 10, y: -25 } }
+                         }
+                       " style="height: 246px;"></div>
+                </div>
+            </div>
+            <!-- /service -->
+
+            <!-- task1 -->
+            <div class="panel wrapper">
+                <div class="row">
+                    <div class="col-md-6 b-r b-light no-border-xs">
+                        <a href class="text-muted text-lg pull-right">
+                            <i class="icon-arrow-right"></i>
+                        </a>
+                        <h4 class="font-thin m-t-none m-b-md text-muted">我的学习任务</h4>
+                        <div class="m-b">
+                            <div class="m-b">
+                                <span class="label text-base bg-warning pos-rlt m-r">
+                                    <i class="arrow right arrow-warning"></i>
+                                    16:35
+                                </span>
+                                <a href>学习HTML</a>
+                            </div>
+                            <div class="m-b">
+                                <span class="label text-base bg-info pos-rlt m-r">
+                                    <i class="arrow right arrow-info"></i>
+                                    17:58
+                                </span>
+                                 <a href>学习CSS</a>
+                            </div>
+                            <div class="m-b">
+                                <span class="label text-base bg-primary pos-rlt m-r">
+                                    <i class="arrow right arrow-primary"></i>
+                                    20:11
+                                </span>
+                                 <a href>学习JS</a>
+                            </div>
+                            <div class="m-b">
+                                 <span class="label text-base bg-lilac pos-rlt m-r">
+                                    <i class="arrow right arrow-lilac"></i>
+                                    22:23
+                                </span>
+                                 <a href>学习JQ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row row-sm">
+                            <div class="col-xs-6 text-center">
+                                <div ui-jq="easyPieChart" ui-options="{
+                                  percent:79,
+                                  lineWidth:10,
+                                  trackColor:'{{app.color.light}}',
+                                  barColor:'{{app.color.primary}}',
+                                  scaleColor:false,
+                                  size:115,
+                                  rotate:90,
+                                  lineCap:'butt',
+                                }" class="inline m-t">
+                                    <div>
+                                        <span class="text-primary h4">79%</span>
+                                    </div>
+                                </div>
+                                <div class="text-muted font-bold text-xs m-t m-b">Javascript</div>
+                            </div>
+                            <div class="col-xs-6 text-center">
+                                <div ui-jq="easyPieChart" ui-options="{
+                                  percent:69,
+                                  lineWidth:30,
+                                  trackColor:'{{app.color.light}}',
+                                  barColor:'{{app.color.info}}',
+                                  scaleColor:false,
+                                  size:115,
+                                  rotate:180,
+                                  lineCap:'butt',
+                                }" class="inline m-t">
+                                    <div>
+                                        <span class="text-imfo h4">69%</span>
+                                    </div>
+                                </div>
+                                <div class="text-muted font-bold text-xs m-t m-b">AngularJS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- task1 -->
+            <!-- task 2 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel no-border">
+                        <div class="panel-heading wrapper b-b b-light">
+                            <span class="text-muted text-xs pull-right">
+                                <i class="fa fa-circle text-primary m-r-xs"></i>22
+                                <i class="fa fa-circle text-info m-r-xs"></i>66
+                                <i class="fa fa-circle text-warning m-r-xs"></i>8
+                            </span>
+                            <h4 class="fong-thin m-b-none m-t-none text-muted">同伴</h4>
+                        </div>
+                        <ul class="list-group list-group-lg m-b-none">
+                            <li class="list-group-item">
+                                <a class="thumb-sm m-r">
+                                    <img src="img/h2.jpg" class="r r-2x">
+                                </a>
+                                <span class="label bg-primary inline m-t-sm pull-right">Leader</span>
+                                <a href>林俊杰</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="thumb-sm m-r">
+                                    <img src="img/h3.jpg" class="r r-2x">
+                                </a>
+                                <span class="label bg-info inline m-t-sm pull-right">成员</span>
+                                <a href>金沙</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a class="thumb-sm m-r">
+                                    <img src="img/h4.jpg" class="r r-2x">
+                                </a>
+                                <span class="label bg-warning inline m-t-sm pull-right">主编</span>
+                                <a href>周杰伦</a>
+                            </li>
+                           <li class="list-group-item">
+                                <a class="thumb-sm m-r">
+                                    <img src="img/h5.jpg" class="r r-2x">
+                                </a>
+                                <span class="label bg-warning inline m-t-sm pull-right">主编</span>
+                                <a href>林峰</a>
+                            </li>
+                        </ul>
+                        <div class="panel-footer">
+                            <span class="badge m-t-xs pull-right">66</span>
+                            <button class="btn btn-primary btn-sm btn-addon">
+                                <i class="fa fa-plus"></i>
+                                添加成员
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="list-group list-group-lg list-group-sp">
+                        <a href class="list-group-item clearfix">
+                            <span class="thumb-sm avatar m-r pull-left">
+                                <img src="img/h6.jpg" alt="..">
+                                <i class="on b-white right"></i>
+                            </span>
+                            <span class="clear">
+                                <span>王菲</span>
+                                <small class="text-muted clear text-ellipsis">
+                                    王菲（Faye Wong），1969年8月8日出生于北京，中国流行乐女歌手、影视演员。
+                                </small>
+                            </span>
+                        </a>
+                        <a href class="list-group-item clearfix">
+                            <span class="thumb-sm avatar m-r pull-left">
+                                <img src="img/h7.jpg" alt="..">
+                                <i class="on b-white right"></i>
+                            </span>
+                            <span class="clear">
+                                <span>鸟叔</span>
+                                <small class="text-muted clear text-ellipsis">
+                                    朴载相（Psy），1977年12月31日出生于韩国首尔，韩国歌手。2001年，朴载相首度发行专辑《PSY from the PSYcho World！》。
+                                </small>
+                            </span>
+                        </a>
+                        <a href class="list-group-item clearfix">
+                            <span class="thumb-sm avatar m-r pull-left">
+                                <img src="img/h8.jpg" alt="..">
+                                <i class="busy b-white right"></i>
+                            </span>
+                            <span class="clear">
+                                <span>沙宝亮</span>
+                                <small class="text-muted clear text-ellipsis">
+                                    沙宝亮，中国内地歌手，1972年1月1日出生于北京。他1980年进入杂技团学艺，1987年在法国未来杂技节获得杂技金奖
+                                </small>
+                            </span>
+                        </a>
+                        <a href class="list-group-item clearfix">
+                            <span class="thumb-sm avatar m-r pull-left">
+                                <img src="img/h9.jpg" alt="..">
+                                <i class="busy b-white right"></i>
+                            </span>
+                            <span class="clear">
+                                <span>王力宏</span>
+                                <small class="text-muted clear text-ellipsis">
+                                    王力宏（Leehom Wang），1976年5月17日出生于美国纽约，籍贯浙江义乌。华语流行男歌手、音乐制作人、演员、导演。通晓英语、中文、法语、日语，略通韩语、粤语、
+                                </small>
+                            </span>
+                        </a>
+                        <a href class="list-group-item clearfix">
+                            <span class="thumb-sm avatar m-r pull-left">
+                                <img src="img/h10.jpg" alt="..">
+                                <i class="off b-white right"></i>
+                            </span>
+                            <span class="clear">
+                                <span>李刚</span>
+                                <small class="text-muted clear text-ellipsis">
+                                    李刚，“我爸是李刚”事件的核心人物之一，河北保定人。
+                                </small>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /task 2 -->
+        </div>     
+        <!-- / main body -->
+    </div>
+    <!-- /main -->
+    <!--  right col -->
+    <div class="col w-md bg-white-only b-l bg-auto no-border-xs">
+       <!--  angular ui-bootstrap-tabs -->
+        <tabset type="tabs" justified="true" class="nav-tabs-alt">
+            <tab>
+                <tab-heading>
+                    <i class="glyphicon glyphicon-user text-md text-muted wrapper-sm text-mhd"></i>
+                </tab-heading>
+                <div class="wrapper-md">
+                    <div class="m-b-sm text-md">成员</div>
+                    <ul class="list-group no-borders no-bg pull-in">
+                        <li class="list-group-item">
+                            <a href class="thumb-sm avatar pull-left m-r">
+                                <img src="img/h11.jpg">
+                                <i class="on bottom b-white"></i>
+                            </a>
+                            <div class="clear">
+                                <div>
+                                    <a href>王宝强</a>
+                                </div>
+                                <small class="text-muted">著名演员，喜剧</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a href class="thumb-sm avatar pull-left m-r">
+                                <img src="img/h12.jpg">
+                                <i class="on bottom b-white"></i>
+                            </a>
+                            <div class="clear">
+                                <div>
+                                    <a href>王祖蓝</a>
+                                </div>
+                                <small class="text-muted">优秀作家，艺术家</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a href class="thumb-sm avatar pull-left m-r">
+                                <img src="img/h13.jpg">
+                                <i class="busy bottom b-white"></i>
+                            </a>
+                            <div class="clear">
+                                <div>
+                                    <a href>小沈阳</a>
+                                </div>
+                                <small class="text-muted">著名歌手，小品王</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a href class="thumb-sm avatar pull-left m-r">
+                                <img src="img/h14.jpg">
+                                <i class="busy bottom b-white"></i>
+                            </a>
+                            <div class="clear">
+                                <div>
+                                    <a href>胡歌</a>
+                                </div>
+                                <small class="text-muted">著名歌手，影视演员</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a href class="thumb-sm avatar pull-left m-r">
+                                <img src="img/h15.jpg">
+                                <i class="away bottom b-white"></i>
+                            </a>
+                            <div class="clear">
+                                <div>
+                                    <a href>王大锤</a>
+                                </div>
+                                <small class="text-muted">少年派作家</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <a href class="thumb-sm avatar pull-left m-r">
+                                <img src="img/h16.jpg">
+                                <i class="off bottom b-white"></i>
+                            </a>
+                            <div class="clear">
+                                <div>
+                                    <a href>陈赫</a>
+                                </div>
+                                <small class="text-muted">爱情公寓主演</small>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href class="btn btn-sm btn-primary padder-md m-b">更多联系人</a>
+                    </div>
+                </div>
+            </tab>
+            <tab>
+                <tab-heading>
+                    <i class="glyphicon glyphicon-comment text-md text-muted wrapper-sm text-mhd"></i>
+                </tab-heading>
+                <div class="wrapper-md">
+                    <div class="text-muted m-b-sm">聊天</div>
+                    <ul class="list-group no-borders no-bg pull-in">
+                        <li class="list-group-item">
+                            <span class="thumb-sm pull-left m-r">
+                                <img src="img/h11.jpg" alt="..." class="img-circle">
+                            </span>
+                            <a href class="text-muted" ui-toggle-class="show" x-target=".app-aside-right"> <i class="fa fa-comment-o pull-right m-t-sm text-sm"></i></a>
+                            <div class="clear">
+                                <div><a href>王宝强</a></div>
+                                <small class="text-muted">2分钟前</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="thumb-sm pull-left m-r">
+                                <img src="img/h12.jpg" alt="..." class="img-circle">
+                            </span>
+                            <a href class="text-muted" ui-toggle-class="show" x-target=".app-aside-right"> <i class="fa fa-comment-o pull-right m-t-sm text-sm"></i></a>
+                            <div class="clear">
+                                <div><a href>王祖蓝</a></div>
+                                <small class="text-muted">3分钟前</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="thumb-sm pull-left m-r">
+                                <img src="img/h13.jpg" alt="..." class="img-circle">
+                            </span>
+                            <a href class="text-muted" ui-toggle-class="show" x-target=".app-aside-right"> <i class="fa fa-comment-o pull-right m-t-sm text-sm"></i></a>
+                            <div class="clear">
+                                <div><a href>小沈阳</a></div>
+                                <small class="text-muted">4分钟前</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="thumb-sm pull-left m-r">
+                                <img src="img/h14.jpg" alt="..." class="img-circle">
+                            </span>
+                            <a href class="text-muted" ui-toggle-class="show" x-target=".app-aside-right"> <i class="fa fa-comment-o pull-right m-t-sm text-sm"></i></a>
+                            <div class="clear">
+                                <div><a href>胡歌</a></div>
+                                <small class="text-muted">56分钟前</small>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="thumb-sm pull-left m-r">
+                                <img src="img/h16.jpg" alt="..." class="img-circle">
+                            </span>
+                            <a href class="text-muted" ui-toggle-class="show" x-target=".app-aside-right"> <i class="fa fa-comment-o pull-right m-t-sm text-sm"></i></a>
+                            <div class="clear">
+                                <div><a href>陈赫</a></div>
+                                <small class="text-muted">1小时前</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </tab>
+            <tab>
+                <tab-heading>
+                    <i class="glyphicon glyphicon-transfer text-md text-muted wrapper-sm text-mhd"></i>
+                </tab-heading>
+                <div class="wrapper-md">
+                    <div class="text-muted m-b-sm">新闻概要</div>
+                    <ul class="list-group list-group-sm list-group-sp list-group-alt auto m-t">
+                        <li class="list-group-item">
+                            <span class="text-muted">中国共产党成立95周年</span>
+                            <span class="block text-md text-info">时政</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="text-muted">爱情公寓第6季</span>
+                            <span class="block text-md text-primary">影视</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="text-muted">奔跑吧！兄弟</span>
+                            <span class="block text-md text-warning">娱乐</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="text-muted">作家韩寒新作品</span>
+                            <span class="block text-md text-danger">文学</span>
+                        </li>
+                    </ul>
+                </div>
+            </tab>
+        </tabset>
+         <!--  /angular ui-bootstrap-tabs -->
+        <div class="padder-md">
+            <!-- steamline -->
+            <div class="m-b text-md">最新消息</div>
+            <div class="steamline b-l m-b">
+                <div class="sl-item">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">3分钟前</div>
+                        <p>
+                            <a href class="text-info">王宝强</a>
+                            评论了你的状态
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-item">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">12:30</div>
+                        <p>
+                            评论了你的状态
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-item b-success b-l">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">9:01</div>
+                        <p>
+                            <a href class="text-info">陈赫</a>
+                           给您点了一个赞,并且评论了您。
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-success wrapper-sm m-l-n m-r-n m-b r r-2x">
+                    <a href>创建新消息</a>
+                </div>
+                <div class="sl-item b-primary b-l">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">6月30日，星期三</div>
+                        <p>
+                            <a href class="text-info">赵本山</a>
+                           觉得你有不可估量的前途。
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-item b-info b-l">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">6月31日，星期四</div>
+                        <p>
+                            <a href class="text-info">郭德纲</a>
+                           邀请你加入
+                           <a href class="text-info">德云社</a>。
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-item b-warning b-l">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">7月1日，星期五</div>
+                        <p>
+                            <a href class="text-info">周杰伦</a>
+                           邀请你加入参加明天的成都公开演唱会。
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-item b-warning b-l">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">7月1日，星期五</div>
+                        <p>
+                            <a href class="text-info">刘亦菲</a>
+                           邀请你视频聊天。
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-item b-l">
+                    <div class="m-l">
+                        <div class="text-muted text-sm">2:00</div>
+                        <p>
+                            <a href class="text-info">林志炫</a>
+                           给了您一个赞。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /steamline -->
+        </div>
+    </div>
+    <!-- / right col -->
+</div>

@@ -1,0 +1,141 @@
+@charset UTF-8;
+
+.main {
+	margin-bottom: 2%;
+	background-color: #fafafa;
+}
+
+.breadcrumb>li+li:before {
+	padding: 0 3px;
+	color: #333;
+    content: ">"; 
+}
+
+.breadcrumb {
+	font-size: 1.8rem;
+	background-color: #fafafa;
+}
+
+.breadcrumb a {color: #333;}
+
+ .breadcrumb a:hover {color: #29b078;}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+
+/*breadcrumb End*/
+
+/*siderbar start*/
+
+ul.siderbar-list {
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+}
+
+ul.siderbar-list > li {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	/*color: #29b078;*/
+}
+
+li.head {border-bottom:  1px solid #e6e6e6;}
+
+li.head h4{
+	margin-left: 35%;
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+ul.siderbar-list > li a{margin-left: 35%;}
+
+.siderbar-list a:link,
+.siderbar-list a:visited {
+	color:#29b078;
+}
+
+.siderbar-list a:hover,
+.siderbar-list a:active {
+	color:#f1a750;
+}
+
+.jnsrecommend.row-two span {background: url(../images/sprite5.png) no-repeat;}
+
+.siderbar-list span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 3%;
+}
+
+.siderbar-list li:hover span {background-position: 0 100%;}
+
+li.tudou-net span{background-position: 0 100%;}
+
+li.tudou-net > a{color: #ff650e!important;}
+
+/*siderbar end*/
+
+/*start content*/
+
+.main-content{
+	border: 1px solid #eeeded;
+	background-color: #fff;
+	box-shadow: -1px 0 2px #e2e2e2,0 2px 2px #e2e2e2 ;
+	box-sizing: border-box;
+}
+
+.main-content p {
+	text-indent: 2em;
+	line-height: 200%;
+	color: #999;
+}
+
+.content-one {
+	padding:2%;
+	margin:0;
+	border-bottom: 1px solid #eeeded;
+	
+}
+
+ span.tudou-logo {
+ 	display: inline-block;
+	width: 122px;
+	height: 33px;
+	margin:23% auto;
+	background-position: 97.5% 0 !important;
+}
+
+.logo-center{text-align: center;}
+
+@media screen and (max-width: 992px){
+
+	span.tudou-logo{margin: 1% auto;}
+	
+}
+
+p.jianjie {
+	padding-left: 2%;
+	text-align: justify;
+	text-indent: 0;
+}
+
+.content-two {
+	padding:2%;
+	margin: 0;
+	text-align: justify;
+}
+
+.content-two p{margin-bottom: 3%;}
+
+.main button {margin-bottom: 2%!important;}
+
+@media screen and (max-width: 992px) {
+	p.jianjie {
+	padding-left: 0;
+	}
+}

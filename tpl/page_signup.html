@@ -1,0 +1,37 @@
+<div class="container w-xxl w-auto-xs" ng-controller="SignupFormController" ng-init="app.settings.container=false;app.settings.asideDock=false;">
+	<a href class="block navbar-brand">{{app.name}}</a>
+	<div class="m-b-lg">
+		<div class="wrapper text-center">
+			<strong>注册发现更多精彩</strong>
+		</div>
+		<form class="form-validation" name="form">
+			<div class="text-danger wrapper text-center" ng-show="authError">
+				{{authError}}
+			</div>
+			<div class="list-group list-group-sm">
+				<div class="list-group-item">
+					<input type="text" name="name" placeholder="用户名" ng-model="user.name" class="form-control no-border" required>
+				</div>
+				<div class="list-group-item">
+					<input type="email" name="email" placeholder="注册邮箱" ng-model="user.email" class="form-control no-border" required>
+				</div>
+				<div class="list-group-item">
+					<input type="password" name="password" placeholder="密码" ng-model="user.password" class="form-control no-border" required>
+				</div>
+			</div>
+			<div class="checkbox m-b-md m-t-none">
+				<label class="i-checks">
+					<input type="checkbox" ng-model="agree" required>
+					<i></i>
+					同意<a href class="text-info">相关政策</a>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="signup()" ng-disabled="form.$invalid">注册</button>
+			<div class="line line-dashed"></div>
+			<p class="text-center"><small>已经拥有账户？</small></p>
+			<a href ui-sref="access.signin" class="btn btn-lg btn-default btn-block m-b-sm">登录</a>
+			<p class="text-right m-b-none"><small><a href ui-sref="app.v2" class="text-info">先逛逛再说</a></small></p>
+		</form>
+	</div>
+	<div class="text-center" ng-include="'tpl/blocks/page_footer.html'"></div>
+</div>

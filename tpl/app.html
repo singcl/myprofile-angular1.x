@@ -1,0 +1,37 @@
+<!--navbar -->
+<div data-ng-include="'tpl/blocks/header.html'" class="navbar app-header" role="navigition"></div>
+<!-- / navbar -->
+
+<!-- menu -->
+<div x-ng-include="'tpl/blocks/aside.html'" class="app-aside hidden-xs {{app.settings.asideColor}}"></div>
+<!-- /menu -->
+
+<!-- content -->
+<div class="app-content">
+    <div ui-butterbar></div>
+	<div class="app-content-body fade-in-up" ui-view></div>
+</div>
+
+<!-- <div class="m-l-ths">
+   <canvas id="mhd-canvas" width="1366px" height="718px"></canvas>
+</div> -->
+
+<!-- /content -->
+
+<!-- aside right chat -->
+ <div class="app-aside-right pos-fix w-md no-padder bg-white b-l w-auto-xs animated fadeInRight hide" ng-include="'tpl/blocks/aside-right.html'"></div>
+<!-- /aside right chat -->
+
+<!-- footer -->
+<div class="app-footer wrapper b-t bg-light">
+	<span class="pull-right">
+	    {{app.version}}
+	    <a ui-sref="app" href class="m-l-sm text-muted" ><i class="fa fa-fw fa-long-arrow-up"></i></a>
+	</span>
+	&copy;2016 Copyright
+</div>
+<!-- /footer -->
+
+<!-- settings -->
+<div data-ng-include="'tpl/blocks/settings.html'" class="settings panel panel-default"></div>
+<!-- /settings

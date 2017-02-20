@@ -1,0 +1,29 @@
+<div class="container w-xl w-auto-xs m-t-lg" ng-init="app.settings.container=false;app.settings.asideDock=false;">
+	<a class="block navbar-brand m-t">{{app.name}}</a>
+	<div class="n-b-lg">
+		<div class="text-center wrapper">
+			<strong>验证邮箱找回密码</strong>
+		</div>
+		<form name="reset" ng-init="isCollapsed=true;">
+			<div class="list-group list-group-sm">
+				<div class="list-group-item">
+					<input type="email" ng-model="email" class="form-control no-border" placeholder="Email" required>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-lg btn-primary btn-block m-b-xs" ng-disabled="reset.$invalid" ng-click="isCollapsed = !isCollapsed">发送</button>
+			<div class="text-right">
+				<a href ui-sref="access.signin" class="small text-info m-r-xs">我记得密码</a>
+			</div>
+		</form>
+		<!-- collapse ui-bootstrap directive -->
+		<div collapse="isCollapsed" class="m-t"> 
+			<div class="alert alert-success">
+				<p>一条重置连接已经发送到了您的邮箱，请在7天内点击重置，过期失效！</p>
+				<div class="text-center">
+					<a href ui-sref="access.signin" class="btn btn-sm btn-success">重新登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-center" ng-include="'tpl/blocks/page_footer.html'"></div>
+</div>

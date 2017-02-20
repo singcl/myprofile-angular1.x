@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+/*Carousel Start*/
+
+.mybanner img {margin: 0 auto;}
+
+/*Carousel End*/
+
+/*Main Start*/
+
+.main {
+	color: #999;
+	background-color: #fafafa;
+}
+
+.jnshome .row-one {
+	margin-top: 8%;
+	margin-bottom: 5%;
+}
+
+ .jnshome h4 {
+ 	margin-top: 25px;
+ 	margin-bottom: 25px;
+ 	font-size: 19px;
+ 	font-weight: 600;
+	color: #333;
+	text-align: center;
+
+}
+
+.efficient {
+	width: 43px;
+	height: 62px;
+	margin: 0 auto;
+	background-position: 0% 100%;
+}
+
+
+.standard {
+	width: 60px;
+	height: 62px;
+	margin: 0 auto;
+	background-position: 78% 79%;
+}
+
+.renmai {
+	width: 52px;
+	height: 62px;
+	margin: 0 auto;
+	background-position: 41% 88%;
+}
+
+p.learn > span.sprite {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-position: 101% 50%;
+}
+
+p.learn {
+	font-weight: bold;
+	color:#26a26f;
+}
+
+p.xueyuan {font-size: 1.5rem;}
+
+@media screen and (max-width: 992px){
+	.row-one p {
+		text-align: center;
+	}
+}
+
+.col-three {border-right: 1px dashed #dedede;}
+
+.col-four {margin-top: 3.5%;}
+
+/*ROW TWO*/
+
+.jnshome.row-two span {
+	display: inline-block;
+	margin:6% 0;
+	vertical-align: middle;
+}
+
+span.number {
+	width:60px;
+	height: 60px;
+	/*padding:6% 0;*/
+	/*用行高让数字垂直居中，不要用padding，不然小屏时候圆圈会被压扁*/
+	font-size: 2rem;
+	line-height: 3;
+	color:#29b078;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 1px 1px #e3e3e3;
+}
+
+span.content {
+	width: 55%;
+	line-height: 200%;
+	text-align: left;
+}
+
+span.arrow-jns {
+	width:26px;
+	height: 23px;
+	background-position: 100% 101%;
+}
+
+@media screen and (max-width: 768px){
+	.row-two {
+		text-align: center;
+	}
+}
+
+/*row two end ,next row three*/
+
+.jnshome .row-three {
+	margin-top: 8%;
+	margin-bottom: 5%;
+}
+
+.jnshome .row-three .excellence {
+	padding: 5% 13%;
+	margin-top: 3%;
+	border: 1px solid #eeeded;
+	border-top-width: 0.5px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.excellence p {
+	font-size: 1.6rem;
+	line-height: 200%;
+}
+
+.jnshome .row-three .good {margin-bottom: 4%;}
+
+.img {text-align: center;}
+
+ul.dot {
+	float: left;
+	width: 100%;
+	margin: 1% 0;
+	text-align: center;
+}
+
+ul.dot li {
+	display: inline-block;
+	width:15px;
+	height:15px;
+	list-style-type: none;
+	border-radius: 50%;
+	box-shadow: 1px 1px #eaeaea;
+}
+
+ul.dot li:hover {background-color: #29b078;}
+
+/*row three end ,next row four*/
+
+/*.row-four ul {letter-spacing: -5px;}*/ /*下面的li我的换成float了，如果是inline-block就需要*/
+
+.jnshome .row-four ul li {
+	float: left;
+	width: 20%;
+	padding-top:4%;
+	padding-bottom: 4%;
+	/*font-size: 0;
+	-moz-font-size: 0;*/
+	/*text-align: center;*/
+	/*vertical-align: middle;*/
+	list-style-type: none;
+	background-color: #fff;
+	box-shadow: 1px 1px #f3f3f3;
+}
+
+.jnshome .row-four ul li span {
+	display: inline-block;
+	width: 100%;
+	max-width: 175px;
+	height: 60px;
+	/*margin: 0 auto;*/
+	background:#fff url(../images/sprite3.png) no-repeat;
+	background-size: 490% ;
+}
+
+
+/*row four end ,next row five*/
+.row-five {
+	margin-top:1%;
+	margin-bottom: 1%;
+}
+
+.row-five ul {
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.row-five li {
+	float: left;
+	width: 10%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+.row-five li.underline a {border-bottom: 2px solid #26a26f;}
+
+.row-five li a {
+	letter-spacing: 1px;
+	border-bottom: 2px solid transparent;
+}
+
+.row-five li:hover a {
+	color: #bb76ac;
+	border-bottom: 2px solid #26a26f;
+}
+
+/*.row-five li:nth-child(8) {
+	text-align: center;
+	}
+
+.row-five li:nth-child(9) {
+	text-align: right;
+}
+
+.row-five li:nth-child(10) {
+	text-align: right;
+}*/
+
+.row-five a:link{
+	color: #999;
+	text-decoration: none;
+}
+.row-five a:visited{
+	color: #999999;
+	border-bottom: 2px solid #26a26f;
+}
+
+.row-five a:active{color: #f12f09;}
+
+@media screen and (max-width: 992px) {
+	.row-five li {
+	width: 20%;
+	}
+
+	/*.row-five li:nth-child(8) {
+	text-align: left;
+	}
+
+	.row-five li:nth-child(4),
+	.row-five li:nth-child(9) {
+	text-align: center;
+	}
+	
+	.row-five li:nth-child(5),
+	.row-five li:nth-child(10){
+	text-align: right;
+	}*/
+
+}
+
+@media screen and (max-width: 480px) {
+	.row-five li {
+	width: 33%;
+	/*text-align: left!important;*/
+	}
+}

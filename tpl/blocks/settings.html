@@ -1,0 +1,43 @@
+<button class="btn btn-default no-shadow pos-abt" ui-toggle-class="active" x-target=".settings">
+	<i class="fa fa-spin fa-gear"></i>
+</button>
+<div class="panel-heading">
+	<h6 class="panel-title">设置</h6>
+</div>
+<div class="panel-body">
+	<div class="m-b-sm">
+		<label class="i-switch bg-info pull-right">
+			<input type="checkbox" ng-model="app.settings.headerFixed"></input>
+			<i></i>
+		</label>
+		头部固定
+	</div>
+	<div class="m-b-sm">
+		<label class="i-switch bg-info pull-right">
+			<input type="checkbox" ng-model="app.settings.asideFixed"></input>
+			<i></i>
+		</label>
+		左边固定
+	</div>
+	<div class="m-b-sm">
+		<label class="i-switch bg-info pull-right">
+			<input type="checkbox" ng-model="app.settings.asideFolded"></input>
+			<i></i>
+		</label>
+		左边折叠
+	</div>
+	<div class="m-b-sm">
+		<label class="i-switch bg-info pull-right">
+			<input type="checkbox" ng-model="app.settings.asideDock"></input>
+			<i></i>
+		</label>
+		左边隐藏
+	</div>
+	<div>
+		<label class="i-switch bg-info pull-right">
+			<input type="checkbox" ng-model="app.settings.container"></input>
+			<i></i>
+		</label>
+		居中布局
+	</div>
+</div>

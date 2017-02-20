@@ -1,0 +1,143 @@
+{
+  "mails":[
+    {
+      "id": 10,
+      "subject": "海贼王最稀有的果实竟是它 幻兽种果实秒杀自然系果实",
+      "from": "mhd@gmail.com",
+      "avatar": "img/h10.jpg",
+      "to":[
+        {"name":"eewd", "email":"wq123@hotmail.com"}
+      ],
+      "content":"大家都知道，海贼王里的恶魔果实能力是非常重要的战斗力，是整个作品的基底，如果去掉恶魔果实的设定，整个海贼王世界都会黯然失色。那么有不少漫迷们会好奇在《海贼王》的世界里最稀有的果实是哪几个呢？",
+      "attach":[
+        {"name":"c1.jpg", "url":"img/c1.jpg"},
+        {"name":"c3.jpg", "url":"img/c3.jpg"}
+      ],
+      "date":"2016-7-6 9:20",
+      "label":"angular",
+      "fold":"important"
+    },
+    {
+      "id": 9,
+      "subject": "手游或将禁止出现英文 网友乐了：斗地主怎么办",
+      "from": "dds12@gmail.com",
+      "avatar": "img/h9.jpg",
+      "to":[
+        {"name":"vvd1", "email":"eew@hotmail.com"}
+      ],
+      "content":"和讯科技消息 7月7日，史上最严的手游新规在7月1日实施后，以前不愁吃穿的手游开放商们已经欲哭无泪了。在新规实施后，游戏审批异常严格，导致游戏审批时间大幅延长，游戏的生长周期随之变长，在各大软件平台上线的门槛也大幅提高。但令人哭笑不得的是，有游戏开发商居然发现其新游戏送审被驳回的原因居然是游戏里出现英文单词。",
+      "date":"2016-7-7 9:20",
+      "label":"bootstrap",
+      "fold":"important"
+    },
+    {
+      "id": 8,
+      "subject": "这些照片还原了新闻直播的真相",
+      "from": "liliwa@126.com",
+      "avatar": "img/h1.jpg",
+      "to":[
+        {"name":"eee", "email":"eegt1@hotmail.com"}
+      ],
+      "content":"新闻记者似乎总是随时做好了直播的准备，他们每次都能在新闻发生时亲赴现场，向全世界报道正在发生的一切。新闻直播往往引人入胜，在观众眼中，摄像机就是在记录与见证事实的发生。不过，这些直播报道可没那么简单。它们更像一场演出，但也伴随着一份赶赴第一线的荣耀感。在斯洛伐克摄影师Matin Kollar那巧妙怪诞的摄影集《TV Anchors（新闻主播）》中，我们就能看见摄像机开机前的主播众生相，以及荧幕事实背后的舞台感。",
+      "attach":[
+        {"name":"c0.jpg", "url":"img/c0.jpg"}
+      ],
+      "date":"2016-7-2 9:20",
+      "label":"angular",
+      "fold":"important"
+    },
+    {
+      "id": 7,
+      "subject": "手游竟用警局当场景 警方哭笑不得",
+      "from": "lucy@hotmail.com",
+      "avatar": "img/h2.jpg",
+      "to":[
+        {"name":"wedfsf", "email":"3223qq@hotmail.com"}
+      ],
+      "content":"报道称，北边地区警方、消防及紧急服务机构6日在Facebook 上呼吁，要捕捉小精灵，不需要亲身走进警局亦可捉到，同时建议市民横过马路时，视线最好离开手机，笑言“穿山鼠并不会去其他地方”，敬请玩家在安全情况下才去进行“捕捉”小精灵。",
+      "date":"2016-7-3 9:20",
+      "label":"angular",
+      "fold":"sent",
+      "state":"unread"
+    },
+    {
+      "id": 6,
+      "subject": "装逼男在丁丁上纹了个吸尘器还，妹子一看到立马分手！",
+      "from": "ligang@sina.com",
+      "avatar": "img/h3.jpg",
+      "to":[
+        {"name":"lih", "email":"wangyu@119.com"}
+      ],
+      "content":"Lewis把这台可爱的吸尘器的图案刺在自己下体上，把自己的GG当作吸尘器的吸嘴一样。在他刚完成这个刺青的当时，他成了朋友之间的话题焦点，就连他之后在酒吧工作，也偶尔会跳一点脱衣秀逗乐全场。",
+      "date":"2016-7-8 05:20",
+      "label":"client",
+      "fold":"starred",
+      "state":"unread"
+    },
+    {
+      "id": 5,
+      "subject": "网友试吃国产军用牛肉罐头：美味还是毒药？",
+      "from": "Peter@126.com",
+      "avatar": "img/h4.jpg",
+      "to":[
+        {"name":"vfs", "email":"hello@hotmail.com"}
+      ],
+      "content":"这款军用牛肉罐头除了稍微有点咸，油大，冷吃比较考验胃口之外，口感还是不错的，应该说营养丰富，能量充足。在高强度的行军、训练、作战后，可谓是难得的美食了。",
+      "date":"2016-7-1 9:20",
+      "label":"",
+      "fold":"sent"
+    },
+    {
+      "id": 4,
+      "subject": "小学生搞笑期末试卷答案，机智到不忍心扣分！",
+      "from": "bibili@yahoo.com",
+      "avatar": "img/h5.jpg",
+      "to":[
+        {"name":"bili", "email":"wweq123@163.com"}
+      ],
+      "content":"每当考试，总有一些学生别出新裁，不把机智用到好好答题上，而是动了歪脑筋，这些学生的答卷，真是让人哭笑不得。",
+      "date":"2016-7-8 8:20",
+      "label":"work",
+      "fold":"starred"
+    },
+    {
+      "id": 3,
+      "subject": "英公布伊战调查报告：枉顾民殇 盲目从美",
+      "from": "english@tom.com",
+      "avatar": "img/h6.jpg",
+      "to":[
+        {"name":"jing", "email":"eng.abc@hotmail.com"}
+      ],
+      "content":"英国有关介入伊拉克战争的调查报告6日正式公布，认定前首相托尼·布莱尔及其领导的工党政府盲目追随美国出兵伊拉克，没有经过审慎考虑，以片面的情报判断刻意引导战争舆论，无视战争可能带来大量平民伤亡的风险。",
+      "date":"2016-7-8 7:20",
+      "label":"",
+      "fold":"starred"
+    },
+    {
+      "id": 2,
+      "subject": "金正恩参谒锦绣山太阳宫 纪念金日成逝世22周年",
+      "from": "jinzhengen@163.com",
+      "avatar": "img/h7.jpg",
+      "to":[
+        {"name":"jinsanpang", "email":"wq123@hotmail.com"}
+      ],
+      "content":"报道称，金正恩与朝鲜劳动党副委员长们一起步入立有金日成同志和金正日同志塑像的大厅后，朝鲜人民军陆军、海军、航空与防空军以及工农赤卫军仪仗队队长向两位领袖的立像做了报告。随后，金正恩向立像敬献花篮并与陪同人员一起行鞠躬礼。",
+      "date":"2016-7-8 9:50",
+      "label":"",
+      "fold":"trash"
+    },
+    {
+      "id": 1,
+      "subject": "南海仲裁未必能让菲律宾如愿 中国或收获长期好处",
+      "from": "wangbaoqiang@163.com",
+      "avatar": "img/h8.jpg",
+      "to":[
+        {"name":"王祖蓝", "email":"ggsmida@163.com"}
+      ],
+      "content":"据香港《南华早报》网站7月7日报道称，对中国政府而言，仲裁结果所造成的影响或许并非全都是消极的。不管结果如何糟糕，这次仲裁都会迫使中国依据国际法特别是海洋法来更加努力地思考在南中国海的合法诉求.",
+      "date":"2016-7-8 01:20",
+      "label":"work",
+      "fold":"starred"
+    }
+  ]
+}

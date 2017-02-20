@@ -1,0 +1,326 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+app.settings.headerFixed=true;
+app.settings.asideDock=true;
+app.settings.asideFolded=true;
+app.settings.asideFixed=true;">
+   <!--  main -->
+	<div class="col">
+		<div class="wrapper-md bg-white-only b-b">
+			<div class="row text-center">
+				<div class="col-xs-6 col-sm-3">
+					<div>
+						mhd
+						<i class="fa fa-fw fa-caret-up text-success text-sm"></i>
+					</div>
+					<div class="h2 m-b-sm">HTML</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div>
+						mhd
+						<i class="fa fa-fw fa-caret-down text-warning text-sm"></i>
+					</div>
+					<div class="h2 m-b-sm">JS</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div>
+						mhd
+						<i class="fa fa-fw fa-caret-down text-danger text-sm"></i>
+					</div>
+					<div class="h2 m-b-sm">JQ</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div>
+						mhd
+						<i class="fa fa-fw fa-caret-up text-info text-sm"></i>
+					</div>
+					<div class="h2 m-b-sm">Angular</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-md">
+			<div class="row text-center">
+				<div  class="col-xs-6 col-sm-3">
+					<div>HTML</div>
+					<div ui-jq="easyPieChart" ui-options="{
+					  percent: 85,
+					  lineWidth: 5,
+					  trackColor: '{{app.color.light}}',
+					  barColor: '{{app.color.info}}',
+					  scaleColor: fasle,
+					  size: 120,
+					  rotate: 90,
+					  lineCap:'butt'
+					}" class="inline m-t">
+					    <div>
+					    	<span class="text-info h3">85%</span> 
+					    </div>
+					</div>
+				</div>
+				<div  class="col-xs-6 col-sm-3">
+					<div>JS</div>
+					<div ui-jq="easyPieChart" ui-options="{
+					  percent: 85,
+					  lineWidth: 5,
+					  trackColor: '{{app.color.light}}',
+					  barColor: '{{app.color.warning}}',
+					  scaleColor: fasle,
+					  size: 120,
+					  rotate: 0,
+					  lineCap:'butt'
+					}" class="inline m-t">
+					    <div>
+					    	<span class="text-info h3">85%</span> 
+					    </div>
+					</div>
+				</div>
+				<div  class="col-xs-6 col-sm-3">
+					<div>JQ</div>
+					<div ui-jq="easyPieChart" ui-options="{
+					  percent: 79,
+					  lineWidth: 5,
+					  trackColor: '{{app.color.light}}',
+					  barColor: '{{app.color.primary}}',
+					  scaleColor: fasle,
+					  size: 120,
+					  rotate: 180,
+					  lineCap:'butt'
+					}" class="inline m-t">
+					    <div>
+					    	<span class="text-info h3">79%</span> 
+					    </div>
+					</div>
+				</div>
+				<div  class="col-xs-6 col-sm-3">
+					<div>Angular</div>
+					<div ui-jq="easyPieChart" ui-options="{
+					  percent: 79,
+					  lineWidth: 5,
+					  trackColor: '{{app.color.light}}',
+					  barColor: '{{app.color.success}}',
+					  scaleColor: fasle,
+					  size: 120,
+					  rotate: 0,
+					  lineCap:'butt'
+					}" class="inline m-t">
+					    <div>
+					    	<span class="text-info h3">79%</span> 
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-md">
+			<!-- user -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel no-border">
+						<div class="panel-heading wrapper b-b b-light">
+							<span class="text-xs text-muted pull-right">
+								<i class="fa fa-circle text-primary m-r-xs"></i>6
+								<i class="fa fa-circle text-success m-r-xs"></i>88
+								<i class="fa fa-circle text-warning m-r-xs"></i>51
+							</span>
+							<h5 class="font-thin m-t-none m-b-none text-muted">团队成员</h5>
+						</div>
+						<ul class="list-group list-group-lg m-b-none">
+							<li class="list-group-item">
+								<a href class="thumb-sm m-r">
+									<img src="img/h11.jpg" class="r r-2x">
+								</a>
+								<span class="label pull-right bg-primary inline m-t-sm">管理员</span>
+								<a href>马云</a>
+							</li>
+							<li class="list-group-item">
+								<a href class="thumb-sm m-r">
+									<img src="img/h12.jpg" class="r r-2x">
+								</a>
+								<span class="label pull-right bg-warning inline m-t-sm">Leader</span>
+								<a href>詹姆斯</a>
+							</li>
+							<li class="list-group-item">
+								<a href class="thumb-sm m-r">
+									<img src="img/h14.jpg" class="r r-2x">
+								</a>
+								<span class="label pull-right bg-success inline m-t-sm">编辑</span>
+								<a href>科比</a>
+							</li>
+							<li class="list-group-item">
+								<a href class="thumb-sm m-r">
+									<img src="img/h13.jpg" class="r r-2x">
+								</a>
+								<span class="label pull-right bg-success inline m-t-sm">编辑</span>
+								<a href>杜兰特</a>
+							</li>
+						</ul>
+						<div class="panel-footer">
+							<span class="badge badge-bg m-t-xs pull-right bg-info">66</span>
+							<button class="btn btn-primary btn-sm btn-addon">
+								<i class="fa fa-plus"></i>添加成员
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="list-group list-group-lg list-group-sp">
+						<a href class="list-group-item clearfix">
+							<span class="thumb-sm pull-left avatar m-r">
+								<img src="img/h13.jpg" alt="...">
+								<i class="on b-white right"></i>
+							</span>
+							<span class="clear">
+								<span>林书豪</span>
+								<small class="text-muted clear text-ellipsis">
+									最大的挑战和突破在于用人，而用人最大的突破在于信任人。
+								</small>
+							</span>
+						</a>
+						<a href class="list-group-item clearfix">
+							<span class="thumb-sm pull-left avatar m-r">
+								<img src="img/h15.jpg" alt="...">
+								<i class="off b-white right"></i>
+							</span>
+							<span class="clear">
+								<span>巴蒂尔</span>
+								<small class="text-muted clear text-ellipsis">
+									意志命运往往背道而驰，决心到最后会全部推倒。
+								</small>
+							</span>
+						</a>
+						<a href class="list-group-item clearfix">
+							<span class="thumb-sm pull-left avatar m-r">
+								<img src="img/h17.jpg" alt="...">
+								<i class="busy b-white right"></i>
+							</span>
+							<span class="clear">
+								<span>巴恩斯</span>
+								<small class="text-muted clear text-ellipsis">
+									要使整个人生都过得舒适、愉快，这是不可能的，因为人类必须具备一种能应付逆境的态度。
+								</small>
+							</span>
+						</a>
+						<a href class="list-group-item clearfix">
+							<span class="thumb-sm pull-left avatar m-r">
+								<img src="img/h20.jpg" alt="...">
+								<i class="away b-white right"></i>
+							</span>
+							<span class="clear">
+								<span>papi酱</span>
+								<small class="text-muted clear text-ellipsis">
+									重复别人所说的话，只需要教育；而要挑战别人所说的话，则需要头脑。——玛丽·佩蒂博恩·普尔
+								</small>
+							</span>
+						</a>
+						<a href class="list-group-item clearfix">
+							<span class="thumb-sm pull-left avatar m-r">
+								<img src="img/h19.jpg" alt="...">
+								<i class="away b-white right"></i>
+							</span>
+							<span class="clear">
+								<span>HelloKitty</span>
+								<small class="text-muted clear text-ellipsis">
+									人生就是学校。在那里，与其说好的教师是幸福，不如说好的教师是不幸。——海贝尔
+								</small>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /user -->
+		</div>
+		<!-- <div class="wrapper-lg bg-black dker" ng-controller= "FlotChartDemoCtrl">
+			<ul class="nav nav-pills nav-xxs nav-rounded m-b-lg">
+				<li class="active"><a href>日</a></li>
+				<li><a href ng-click="refreshData()">周</a></li>
+				<li><a href ng-click="refreshData()">月</a></li>
+			</ul>
+			<div ui-jq="plot" ui-refresh="d0_1" ui-options="
+			  [{
+			    data: {{d0_1}},
+			    points: {show: true, radius: 3.5},
+			    splines: {show: true, tension: 0.4, lineWidth: 2}
+			  }],
+			  {
+			    colors:['{{app.color.success}}'],
+			    series:{shadowSize: 3},
+			    xaxis: {font: {color: '#507b9b'}},
+			    yaxis: {font: {color: '#507b9b'},max: 18},
+			    grid: {hoverable: true, clickable: true, borderWidth: 0, color: '#6b6882'},
+			    tooltip: true,
+			    tooltipOpts: {content: 'Visits of %x.1 is %y.4',  defaultTheme: false, shifts: { x: 10, y: -25 }}
+			  }" style="min-height: 360px;"></div>
+		</div> -->
+	</div>
+	<!-- / main -->
+	<!-- right col -->
+    <div class="col w-md bg-black dk bg-auto">
+    	<div class="wrapper">
+    		<div class="text-muted m-b-sm">我的好友</div>
+    		<ul class="list-group no-bg no-borders pull-in">
+    			<li class="list-group-item">
+    				<a href class="thumb-sm pull-left avatar m-r">
+    					<img src="img/h3.jpg" alt="...">
+    					<i class="on bottom b-white"></i>
+    				</a>
+    				<div class="clear">
+    					<div><a href>李易峰</a></div>
+    					<small class="text-muted">偶像派演员。</small>
+    				</div>
+    			</li>
+    			<li class="list-group-item">
+    				<a href class="thumb-sm pull-left avatar m-r">
+    					<img src="img/h4.jpg" alt="...">
+    					<i class="on bottom b-white"></i>
+    				</a>
+    				<div class="clear">
+    					<div><a href>汪峰</a></div>
+    					<small class="text-muted">经常上头条的歌手。</small>
+    				</div>
+    			</li>
+    			<li class="list-group-item">
+    				<a href class="thumb-sm pull-left avatar m-r">
+    					<img src="img/h5.jpg" alt="...">
+    					<i class="busy bottom b-white"></i>
+    				</a>
+    				<div class="clear">
+    					<div><a href>李清照</a></div>
+    					<small class="text-muted">著名词人，青莲居士。</small>
+    				</div>
+    			</li>
+    			<li class="list-group-item">
+    				<a href class="thumb-sm pull-left avatar m-r">
+    					<img src="img/h7.jpg" alt="...">
+    					<i class="away bottom b-white"></i>
+    				</a>
+    				<div class="clear">
+    					<div><a href>王宝强</a></div>
+    					<small class="text-muted">实力派演员。</small>
+    				</div>
+    			</li>
+    			<li class="list-group-item">
+    				<a href class="thumb-sm pull-left avatar m-r">
+    					<img src="img/h8.jpg" alt="...">
+    					<i class="on bottom b-white"></i>
+    				</a>
+    				<div class="clear">
+    					<div><a href>黄晓明</a></div>
+    					<small class="text-muted">实力派演员。</small>
+    				</div>
+    			</li>
+    			<li class="list-group-item">
+    				<a href class="thumb-sm pull-left avatar m-r">
+    					<img src="img/h9.jpg" alt="...">
+    					<i class="off bottom b-white"></i>
+    				</a>
+    				<div class="clear">
+    					<div><a href>王祖蓝</a></div>
+    					<small class="text-muted">跑男个子最矮。</small>
+    				</div>
+    			</li>
+    		</ul>
+    		<div class="text-center">
+    			<a class="btn btn-primary btn-sm padder-md m-b">更多联系人</a>
+    		</div>
+    	</div>
+    </div>
+	<!-- /right col -->
+</div>

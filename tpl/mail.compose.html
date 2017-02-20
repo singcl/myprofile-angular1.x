@@ -1,0 +1,89 @@
+<div x-ng-controller="MailComposeCtrl">
+	<!-- header -->
+	<div class="wrapper bg-light lter b-b">
+		<div class="btn-group m-r-sm">
+			<a class="btn btn-sm btn-default w-xxs w-auto-xs" data-toggle="tooltip" data-title="保存"
+			initialize-tooltip >
+				<i class="fa fa-file"></i>
+			</a>
+			<a class="btn btn-sm btn-default w-xxs w-auto-xs" data-toggle="tooltip" data-title="放弃" initialize-tooltip>
+				<i class="fa fa-trash-o"></i>
+			</a>
+		</div>
+	</div>
+	<!--/ header -->
+
+	<div class="wrapper">
+		<form name="newMail" class="form-horizontal m-t-lg">
+			<div class="form-group">
+				<label class="control-label col-lg-2">To:</label>
+				<div class="col-lg-8">
+					<select multiple ui-jq="chosen" data-placeholder="选择收件人" class="form-control chosen-select" ng-model="mail.to">
+						<option ng-repeat="list in tolist" value="{{list.email}}">{{list.name}}<{{list.email}}></option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-lg-2">标题:</label>
+				<div class="col-lg-8">
+					<input type="text" class="form-control" ng-model="mail.subject">
+				</div>
+			</div>
+			<div class="form-group">
+			    <div class="col-lg-10 col-lg-offset-2">
+			        <div class="btn-toolbar m-b-sm btn-editor" data-role="editor-toolbar">
+			        	<div class="btn-group dropdown">
+			        		<a href class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" tooltip="Font-family">
+			        			<i class="fa fa-font text-base"></i>
+			        			<b class="caret"></b>
+			        		</a>
+			        		<ul class="dropdown-menu">
+			        			<li><a href dropdown-toggle data-edit="fontName Serif" style="font-family: 'Serif';">Serif</a></li>
+			        			<li><a href dropdown-toggle data-edit="fontName Sans" style="font-family:'Sans';">Sans</a></li>
+			        			<li><a href dropdown-toggle data-edit="fontName Arial" style="font-family:'Arial';">Arial</a></li>
+			        		</ul>
+			        	</div>
+			        	<div class="btn-group dropdown">
+			        		<a href class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" tooltip="Font-size">
+			        			<i class="fa fa-text-height text-base">&nbsp;</i>
+			        			<b class="caret"></b>
+			        		</a>
+			        		<ul class="dropdown-menu">
+			        			<li><a href dropdown-toggle data-edit="fontSize 5" style="font-size: 24px;">Huge</a></li>
+			        			<li><a href dropdown-toggle data-edit="fontSize 3" style="font-size: 18px;">Nomal</a></li>
+			        			<li><a href dropdown-toggle data-edit="fontSize 1" style="font-size: 14px;">Small</a></li>
+			        		</ul>
+			        	</div>
+			        	<div class="btn-group">
+			        		<a class="btn btn-sm btn-default" data-edit="bold" tooltip="Bold(Ctl/Cmd+B)" tooltip-append-to-body=true><i class="fa fa-bold text-base"></i></a>
+			        		<a class="btn btn-sm btn-default" data-edit="italic" tooltip="Italic(Ctrl/Cmd+I)" tooltip-append-to-body=true><i class="fa text-base fa-italic"></i></a>
+			        		<a class="btn btn-sm btn-default" data-edit="strikethrough" tooltip="Strikethrough" tooltip-append-to-body=true><i class="fa text-base fa-strikethrough"></i></a>
+                            <a class="btn btn-sm btn-default" data-edit="underline" tooltip="Underline (Ctrl/Cmd+U)" tooltip-append-to-body=true><i class="fa text-base fa-underline"></i></a>
+			        	</div>
+			        	<div class="btn-group">
+			        		<a class="btn btn-sm btn-default" data-edit="insertunorderedlist" tooltip="Bullet list" tooltip-append-to-body=true><i class="fa text-base fa-list-ul"></i></a>
+			                <a class="btn btn-sm btn-default" data-edit="insertorderedlist" tooltip="Number list" tooltip-append-to-body=true><i class="fa text-base fa-list-ol"></i></a>
+			                <a class="btn btn-sm btn-default" data-edit="outdent" tooltip="Reduce indent (Shift+Tab)" tooltip-append-to-body=true><i class="fa text-base fa-dedent"></i></a>
+			                <a class="btn btn-sm btn-default" data-edit="indent" tooltip="Indent (Tab)" tooltip-append-to-body=true><i class="fa text-base fa-indent"></i></a>
+			        	</div>
+			        	<div class="btn-group">
+			                <a class="btn btn-sm btn-default" data-edit="justifyleft" tooltip="Align Left (Ctrl/Cmd+L)" tooltip-append-to-body=true><i class="fa text-base fa-align-left"></i></a>
+			                <a class="btn btn-sm btn-default" data-edit="justifycenter" tooltip="Center (Ctrl/Cmd+E)" tooltip-append-to-body=true><i class="fa text-base fa-align-center"></i></a>
+			                <a class="btn btn-sm btn-default" data-edit="justifyright" tooltip="Align Right (Ctrl/Cmd+R)" tooltip-append-to-body=true><i class="fa text-base fa-align-right"></i></a>
+			                <a class="btn btn-sm btn-default" data-edit="justifyfull" tooltip="Justify (Ctrl/Cmd+J)" tooltip-append-to-body=true><i class="fa text-base fa-align-justify"></i></a>
+                        </div>
+			        </div>
+			        <div ui-jq="wysiwyg" class="form-control h-auto" style="min-height:200px;">
+			        	开始...&hellip;
+			        </div>
+			    </div>
+			</div>
+		    <div class="form-group">
+		    	<div class="col-lg-8 col-lg-offset-2">
+		    		<button class="btn btn-info w-xs">发送</button>
+		    	</div>
+		    </div>	
+		</form>
+	</div>
+</div>
+

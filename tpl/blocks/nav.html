@@ -1,0 +1,184 @@
+<ul class="nav">
+	<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+		<span translate="aside.nav.HEADER">导航</span>
+	</li>
+	<li>
+		<a href class="auto">
+			<span class="text-muted pull-right">
+				<i class="fa fa-fw fa-angle-right text"></i>
+				<i class="fa fa-fw fa-angle-down text-active"></i>
+			</span>
+			<i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+			<span class="font-bold" translate="aside.nav.DASHBOARD">版本</span>
+		</a>
+		<ul class="nav nav-sub dk">
+			<li class="nav-sub-header">
+				<a href>
+					<span translate="aside.nav.DASHBOARD">Dashboard</span>
+				</a>
+			</li>
+			<li ui-sref-active="acitve">
+				<a ui-sref="app.v1">
+					<span>第一版</span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="app.v2">
+				    <b class="label bg-info pull-right">新</b>
+					<span>第二版</span>
+				</a>
+			</li>
+		</ul>
+	</li>
+    
+    <li ui-sref-active="active">
+    	<a ui-sref="app.page.profile">
+    	    <b class="label pull-right bg-primary">N</b>
+    		<i class="icon-user icon text-success-lter"></i>
+    		<span class="font-bold" translate="aside.nav.your_stuff.PROFILE">个人简介</span>
+    	</a>
+    </li>
+
+	<li ui-sref-active="active">
+		<a ui-sref="app.mail.list">
+		    <b class="badge bg-success pull-right">6</b>
+			<i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+			<span class="font-bold" translate="aside.nav.EMAIL">邮件</span>
+		</a>
+	</li>
+
+	<li>
+		<a href class="auto">
+			<span class="pull-right text-muted">
+				<i class="fa fa-fw fa-angle-right text"></i>
+				<i class="fa fa-fw fa-angle-down text-active"></i>
+			</span>
+			<i class="glyphicon glyphicon-th icon text-success"></i>
+			<span class="font-bold" translate="aside.nav.DEMO">响应式</span>
+		</a>
+		<ul class="nav nav-sub dk">
+			<li class="nav-sub-header">
+				<a href>
+					<span>Responsvie</span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="responsive.jnshome">
+				    <b class="badge bg-success pull-right">Cool</b>
+					<span>Demo1</span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="responsive.casing">
+					<span>Demo2</span>
+				</a>
+			</li>
+		</ul>
+	</li>
+
+	<li ui-serf-active="active">
+		<a ui-sref="app.chart" ui-toggle-class="show" x-target=".app-aside-right">
+		    <i class="glyphicon glyphicon-signal icon text-info-dker"></i>
+		    <span class="font-bold" translate="app.nav.components.chart">聊天</span>
+		</a>
+	</li>
+
+	<li>
+		<a href class="auto">
+			<span class="pull-right text-muted">
+				<i class="fa fa-fw fa-angle-right text"></i>
+				<i class="fa fa-fw fa-angle-down text-active"></i>
+			</span>
+			<i class="glyphicon glyphicon-th-large icon"></i>
+			<span class="font-bold">应用</span>
+		</a>
+		<ul class="nav nav-sub dk">
+			<li class="nav-sub-header">
+				<a href>
+					<span>应用</span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a href ui-sref="access.404">
+				    <b class="badge bg-info pull-right">C</b>
+					<span>Click Me</span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a href ui-sref="access.404">
+				    <b class="badge bg-info pull-right">C</b>
+					<span>Click Me</span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="access.404">
+				    <b class="badge bg-info pull-right">C</b>
+					<span>Click Me</span>
+				</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="line dk hidden-folded"></li>
+
+	<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+		<span translate="aside.nav.components.COMPONENTS">组件(建设中...)</span>
+	</li>
+
+	<li ng-class="{'active':$state.includes('app.table')}">
+		<a href class="auto" ui-sref="access.404">
+			<span class="pull-right text-muted">
+				<i class="fa fa-fw fa-angle-right text"></i>
+				<i class="fa fa-fw fa-angle-down text-active"></i>
+			</span>
+			<b class="label bg-primary pull-right">none</b>
+			<i class="glyphicon glyphicon-list icon"></i>
+			<span translate="app.nav.components.table.TABLE">表格</span>
+		</a>
+		<ul></ul>
+	</li>
+
+	<li ng-class="{'active':$state.includes('app.form')}">
+		<a href class="auto" ui-sref="access.404">
+			<span class="pull-right text-muted">
+				<i class="fa fa-fw fa-angle-right text"></i>
+				<i class="fa fa-fw fa-angle-down text-active"></i>
+			</span>
+			<i class="glyphicon glyphicon-edit icon"></i>
+			<span translate="app.nav.components.form.FORM">表单</span>
+		</a>
+		<ul></ul>
+	</li>
+
+	<li ng-class="{'active':$state.includes('app.page')}">
+		<a href class="auto" ui-sref="access.404">
+			<span class="pull-right text-muted">
+				<i class="fa fa-fw fa-angle-right text"></i>
+				<i class="fa fa-fw fa-angle-down text-active"></i>
+			</span>
+			<i class="glyphicon glyphicon-file icon"></i>
+			<span translate="app.nav.components.pages.PAGES">更多</span>
+		</a>
+		<ul></ul>
+	</li>
+
+	<li class="line dk hidden-folded"></li>
+
+	<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+		<span translate="aside.nav.your_stuff.YOUR_STUFF">杂项(建设中...)</span>
+	</li>
+
+    <li ui-sref-active="active">
+		<a ui-sref="app.calendar">
+			<i class="glyphicon glyphicon-calendar icon"></i>
+			<span translate="aside.nav.CALENDAR">日历</span>
+		</a>
+	</li>
+
+    <li>
+    	<a ui-sref="app.docs">
+    		<i class="icon-question icon"></i>
+    		<span translate="aside.nav.your_stuff.DOCUMENTS">文档</span>
+    	</a>
+    </li>
+</ul>

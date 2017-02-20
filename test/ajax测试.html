@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<style>
+	.block {
+		display: block;
+	}
+
+	.w-xs {
+		width: 32px;
+	}
+
+    .w-xs > i {
+    	color: #993399;
+    }
+</style>
+</head>
+<body>
+    <div id="myDiv"><h2>使用 AJAX 修改文本内容</h2></div>
+    <button type="button">XHR</button>
+    <div>
+    	<audio id="audio">
+    		<source src="dima.mp3" type="audio/mpeg">
+    	</audio>
+    	<span class="block w-xs">
+    		<i class="fa fa-play-circle-o fa-2x" id="img"></i>
+    	</span>
+    </div>
+    <script type="text/javascript">
+    	
+
+    </script>
+<script type="text/javascript" src="mhd.js"></script>
+<script type="text/javascript">
+(function () {
+	var audio = document.getElementById("audio"),
+        img = document.getElementById("img"),
+	    x = document.getElementsByTagName("button")[0];
+
+	if (x.addEventListener) {
+        x.addEventListener("click",callback);
+	}
+	else if (x.attachEvent) {                    //IE兼容
+		x.attachEvent("onclick", callback);
+	}
+	function callback(e) {
+		if (e && e.preventDefault) {
+            e.preventDefault;
+		}
+		else {
+			window.event.returnValue = false; //必须是event不能写e  IE兼容
+		}
+
+		NameSpace.mhd.ajaxGetText("../index.html",function(response,status,xhr) {
+		    alert(response);
+	    });
+	}
+
+
+	img.onclick = function() {
+		if(audio.paused) {
+			audio.play();
+		}
+		else {
+			audio.pause();
+		}
+	}
+    
+    audio.onplay = function() {
+    	img.className = "fa fa-pause fa-2x"
+    };
+
+    audio.onpause = function() {
+    	img.className = "fa fa-play-circle-o fa-2x"
+    };
+    
+    var aa = ["www",2,3,4,2,1,"www",6,6,7];
+    alert(NameSpace.mhd.mUnique(aa));
+    // alert(NameSpace.mhd.oSort(aa));
+    // alert(aa.unique());
+    var bb = [3,5,2,1,55,66,11,3,2];
+    alert(NameSpace.mhd.bubbleSort(bb));
+    NameSpace.mhd.ajax({
+    	type:"GET",
+    	url:"../index.html",
+    	data: {name:"wwwwww"},
+    	success: function(responseText,responseXML,xhr) {
+    		console.log(xhr.status);
+    	}
+    });
+    NameSpace.mhd.getJSON({
+    	url:"http://wthrcdn.etouch.cn/weather_mini",
+    	data: {
+    		city:"广州"
+    		
+        },    
+    	success: function(data) {
+    		alert(JSON.stringify(data));
+    	}
+    });
+})();
+
+
+
+/*
+
+//与上面无关的一个对闭包的理解
+var name = "The Window";   
+　　var object = {   
+　　　　name : "My Object",   
+　　　　getNameFunc : function(){
+            var that = this;          //变量替换，使得that始终指向object对象
+　　　　　　return function(){   
+　　　　　　　　return that.name;    
+　　　　　};   
+　　　　}   
+};   
+
+
+alert(object.getNameFunc()());  //The Object
+  
+var name = "The Window";   
+　　var object = {   
+　　　　name : "My Object",   
+　　　　getNameFunc : function(){
+　　　　　　return function(){   
+　　　　　　　　return this.name;   //对this的理解。w3c 教程ECMAScript5中有定义
+　　　　　};   
+　　　　}   
+};   
+alert(object.getNameFunc()());  //The Window  
+*/
+</script>  
+</body>
+</html>

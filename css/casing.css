@@ -1,0 +1,557 @@
+@charset "UTF-8";
+.header {
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+    /*对块级元素设置行高就可以使下面的浮动元素对齐，具体原因呢？*/
+}
+
+.font-x {
+    font-size: 1.5rem;
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #1d7ad9;
+}
+
+.bg-blue.lter,
+.bg-blue .lter {
+    background-color: #1d7ad9;
+}
+
+.header.casing ul li {
+    width: 30%;
+    padding-left: 3%;
+    text-align: center;
+    transition: width 0.5s, background-color 0.5s;
+    /* W3C：IE9以及更早的IE版本不支持transition */
+    -moz-transition: width 0.5s, background-color 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: width 0.5s, background-color 0.5s;
+    /* Safari and Chrome */
+    -o-transition: width 0.5s, background-color 0.5s;
+    /* Opera */
+    /*  vertical-align: middle;  这段代码会使浮动的ul不能垂直对齐，具体原因不知道？？？*/
+}
+
+.header.casing ul li:hover {
+    width: 35%;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.header.casing li:first-child {
+    border-left: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .header.casing ul {
+        text-align: left;
+    }
+    .header.casing ul li {
+        width: 30%;
+        border-left-style: none!important;
+    }
+    .header.casing ul li:hover {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header.casing ul {
+        text-align: left;
+    }
+    .header.casing ul li {
+        width: 40%;
+        border-left-style: none!important;
+    }
+    .header.casing ul li:hover {
+        width: 50%;
+    }
+}
+
+
+/*Header End*/
+
+.nav-casing {
+    background-color: #f9f9f9;
+}
+
+.nav-casing ul {
+    margin: 2% 0 2% -5px;
+}
+
+.nav-casing ul li {
+    padding: 1% 2%;
+    margin-left: 2%;
+    font-size: 1.6rem;
+    background-color: #fff;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    /* 老的 Firefox */
+    transition: background-color 0.3s, color 0.3s;
+    /* W3C：IE9以及更早的IE版本不支持transition */
+    -moz-transition: background-color 0.3s, color 0.3s;
+    /* Firefox 4 */
+    -webkit--moz-transition: background-color 0.3s, color 0.3s;
+    /* Safari and Chrome */
+    -o-transition: background-color 0.3s, color 0.3s;
+    /* Opera */
+}
+
+.nav-casing ul li:hover {
+    color: #fff;
+    background-color: #3985db;
+    cursor: pointer;
+}
+
+.nav-casing li:first-child {
+    color: #fff;
+    background-color: #1d7ad9;
+}
+
+.nav-casing li.active a {
+    color: #fff;
+}
+
+.bg-white.dim {
+    color: #999;
+    background-color: #f9f9f9;
+}
+
+.footer-top {
+    padding: 3% 0;
+}
+
+.footer-top .col-two li {
+    padding-right: 4%;
+}
+
+.footer-top .col-two li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-top .col-two li a:hover {
+    color: orange;
+    border-bottom: 1px solid #3985db;
+}
+
+.footer-top li.about-us a {
+    color: #3985db;
+}
+
+.footer-top .col-three li {
+    padding-left: 0;
+    vertical-align: middle;
+}
+
+.footer-top .col-three li P {
+    margin-bottom: 7px;
+}
+
+.footer-bottom.casing ul {
+    list-style-type: none;
+    margin: 0.8% 0;
+    text-align: center;
+}
+
+.footer-bottom.casing ul li {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-top .col-three ul {
+        text-align: left;
+    }
+    .footer-top .col-three ul li {
+        padding-left: 5px!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 60%!important;
+    }
+}
+
+.main.casing {
+    margin-bottom: 2%;
+}
+
+ul.mask {
+    float: right;
+    width: 50%;
+    padding: 3% 0;
+    text-align: right;
+    letter-spacing: -4px;
+}
+
+ul.mask > li {
+    width: 24.5%;
+    margin-left: -3px;
+    text-align: center;
+}
+
+ul.mask > li ul {
+    position: relative;
+    width: 100%;
+    padding: 3% 0;
+    letter-spacing: -5px;
+    /*font-size:0;
+       -webkit-text-size-adjust:none;  该方法+兼容代码可以去除chrome浏览器inline-block间的空格*/
+}
+
+ul.mask > li ul li.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 1.5% 0;
+    margin-top: -2%;
+    background-color: #ccc;
+}
+
+ul.mask > li p {
+    padding-top: 7%;
+    font-size: 1.5rem;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+ul.mask li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+ul.process-one > li {
+    background-color: #ff7f02!important;
+}
+
+p.step-one {
+    color: #ff7f02!important;
+}
+
+.line-one {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+li.circle {
+    position: relative;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+    padding: 1.5% 0;
+    color: #fff;
+    letter-spacing: -1px;
+    background-color: #ccc;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    /* 老的 Firefox */
+}
+
+.line-three {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    ul.mask {
+        float: left;
+        width: 100%;
+    }
+    ul.mask p {
+        letter-spacing: -1px !important;
+    }
+}
+
+p.start-box {
+    padding-left: 1%;
+    font-size: 1.8rem;
+    border-left: 4px solid #1d7ad9;
+}
+
+input[type="radio"].radios {
+    display: inline-block;
+    margin-top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* IE8 以及更早的浏览器 */
+}
+
+label.radios {
+    padding-left: 27px;
+    margin-left: -20px;
+    background-position: left 59%;
+}
+
+input[type="radio"].radios:checked + label.radios {
+    background-position: left 77%;
+}
+
+.sprite1 {
+    background: url(../img/casing1.png) no-repeat;
+}
+
+.row-typle {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+    border: none;
+}
+
+.row-typle .box-style {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #f4f4f4;
+}
+
+.row-typle .box-style span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.7rem;
+    color: #1d7ad9;
+}
+
+.row-typle .box-style .sprite-img {
+    background-position: 0% -1.5%;
+    width: 23px;
+    height: 21px;
+}
+
+.row-dimensions {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+.row-dimensions .box-style {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #f4f4f4;
+}
+
+.row-dimensions .box-style span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.7rem;
+    color: #1d7ad9;
+}
+
+.row-dimensions .box-style .sprite-img {
+    background-position: 0% 17.5%;
+    width: 23px;
+    height: 21px;
+}
+
+.row-material {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+.row-material .box-style {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #f4f4f4;
+}
+
+.row-material .box-style span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.7rem;
+    color: #1d7ad9;
+}
+
+.row-material .box-style .sprite-img {
+    background-position: 0% 39%;
+    width: 23px;
+    height: 21px;
+}
+
+.style-fx {
+    padding: 2% 0;
+}
+
+.style-fx label {
+    font-weight: normal;
+}
+
+.commom-style {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+}
+
+.row-two {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+}
+
+.row-two .style {
+    padding: 2% 0;
+}
+
+.row-two .style label {
+    font-weight: normal;
+}
+
+.row-two .details {
+    float: right;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    padding-left: 8px;
+    text-align: center;
+}
+
+.row-two .details select {
+    padding: 6.5px 30px 6.5px 3%;
+    color: #999;
+    border: 1px solid #e8e8e8;
+    background-position: 99% 101%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+    .row-two .details {
+        float: left!important;
+        padding-left: 0;
+        text-align: right!important;
+    }
+}
+
+.row-three {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+}
+
+.row-three .style {
+    padding: 2% 0;
+}
+
+.row-three .style label {
+    font-weight: normal;
+}
+
+.row-three .style .row {
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.row-three .style .row > div {
+    padding-right: 0;
+}
+
+.row-three input.text-box {
+    width: 50%;
+    border: 1px solid #e8e8e8;
+}
+
+.row-three .details {
+    float: right;
+    padding-top: 4.6%;
+    padding-bottom: 4.5%;
+    padding-left: 8px;
+    text-align: center;
+}
+
+.row-three .details select {
+    padding: 6.5px 30px 6.5px 3%;
+    color: #999;
+    border: 1px solid #e8e8e8;
+    background-position: 99% 101%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+    .row-three .details {
+        float: right!important;
+        padding-top: 2%!important;
+        padding-bottom: 2%!important;
+        padding-left: 0!important;
+        text-align: right!important;
+    }
+}
+
+.row-four {
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+}
+
+.row-four .style {
+    padding: 2% 0;
+}
+
+.row-four .style label {
+    font-weight: normal;
+}
+
+.row-four input.text-box {
+    width: 50%;
+    border: 1px solid #e8e8e8;
+}
+
+.row-four .details {
+    float: right;
+    padding-top: 1.35%;
+    padding-bottom: 1.35%;
+    padding-left: 8px;
+    text-align: center;
+}
+
+.row-four .details select {
+    padding: 6.5px 30px 6.5px 3%;
+    color: #999;
+    border: 1px solid #e8e8e8;
+    background-position: 99% 101%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width: 992px) {
+    .row-four .details {
+        float: right!important;
+        padding-left: 0!important;
+        text-align: right!important;
+    }
+}
+
+.row-five {
+    padding: 6% 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.6rem;
+    border: 1px solid #e8e8e8;
+    border-top-style: none;
+}
+
+.row-five input {
+    padding: 1% 4%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e15053;
+    border-style: none;
+    border-radius: 3px;
+    outline: none;
+}

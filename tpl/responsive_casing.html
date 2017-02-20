@@ -1,0 +1,284 @@
+<div ng-init="app.settings.headerFixed=false;">
+<div class="header casing bg-blue lter font-x">
+    <div class="container">
+        <div class="row row-one">
+            <div class="col-xs-12 col-sm-9">
+                <p class="inline m-b-none text-center">联系电话：15881615657</p>
+            </div>
+            <div class="col-xs-5 col-sm-3">
+                <ul class="list-inline list-unstyled m-b-none text-right">
+                    <li>注册
+                    </li> <li>登录</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Header End-->
+
+<!--Start Nav-->
+<div class="nav nav-casing">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-inline list-unstyled text-right">
+                    <li class="home active"><a href ui-sref="app.v2">首页</a></li>
+                    <li>在线定制</li>
+                    <li>品质保障</li>
+                    <li ui-sref="app.page.profile">About Me</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Nav-->
+
+<!--Main Start-->
+<div class="main casing bg-white">
+    <div class="container">
+        <div class="row row-one">
+            <div class="col-xs-12">
+                <!--Start main-top-->
+                <ul class="mask">
+                    <li>
+                        <ul class=" process-one">
+                            <li class="circle">1</li>
+                            <li class="line line-one"></li>
+                            <!--该分行方法去除HTML标签段之间的空格-->
+                        </ul>
+                        <p class="step-one">1.定制纸箱</p>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li class="circle">2</li>
+                            <li class="line"></li>
+                           <!--该分行方法去除HTML标签段之间的空格-->
+                        </ul>
+                        <p>2.选择数量</p>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li class="circle">3</li>
+                            <li class="line"></li>
+                           <!--该分行方法去除HTML标签段之间的空格-->
+                        </ul>
+                        <p>3.上传附件</p>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li class="circle">4</li>
+                            <li class="line line-three "></li>
+                           <!--该分行方法去除HTML标签段之间的空格-->
+                        </ul>
+                        <p>4.确认下单</p>
+                    </li>
+                </ul>
+                <!--Process bar  End-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="start-box">请按照以下步骤来定制您的纸箱</p>
+            </div>
+        </div>
+
+        <div class="row row-typle">
+            <div class="col-xs-12 box-style">
+                <span class="sprite1 sprite-img"></span>
+                <span>选择箱型</span>
+            </div>
+        </div>
+
+        <div class="row row-two">
+            <div class="col-xs-12">
+                <div class="row" style="padding-left: 40px">
+                    <div class="col-xs-6 col-sm-2 style">
+                        <input class="radios " type="radio" name="box-style" id="duikou-box">
+                        <label class="radios sprite1" for="duikou-box">对口箱</label>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 style ">
+                        <input class="radios" type="radio" name="box-style" id="plane-box">
+                        <label class="radios sprite1" for="plane-box">飞机盒</label>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 style">
+                        <input class="radios" type="radio" name="box-style" id="tiandi-box">
+                        <label class="radios sprite1" for="tiandi-box">天地盖</label>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 details ">
+                        <select class="sprite1"><option>详细情况</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-dimensions">
+            <div class="col-xs-12 box-style">
+                <span class="sprite1 sprite-img"></span>
+                <span>确定尺寸</span>
+            </div>
+        </div>
+        <div class="row row-three" >
+            <div class="col-xs-12">
+                <div class="row" style="padding-left: 40px">
+                    <div class="col-xs-12 col-sm-10 style">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3 col-md-2">
+                                <input class="radios" type="radio" name="box-dimensions" id="od" checked="checked">
+                                <label class="radios sprite1" for="od">外径</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3  col-md-2">
+                                <label for="length">长</label>
+                                <input  class="text-box" type="text" name="box-dimensions" id="length" >
+                                <label  for="length">mm</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3  col-md-2">
+                                <label for="width">宽</label>
+                                <input  class="text-box" type="text" name="box-dimensions" id="width" >
+                                <label  for="width">mm</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3  col-md-2">
+                                <label for="height">高</label>
+                                <input  class="text-box" type="text" name="box-dimensions" id="height" >
+                                <label  for="height">mm</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3 col-md-2">
+                                <input class="radios" type="radio" name="box-dimensions" id="inside" checked="checked">
+                                <label class="radios sprite1" for="inside">内径</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2">
+                                <label for="length-two">长</label>
+                                <input  class="text-box" type="text" name="box-dimensions" id="length-two" >
+                                <label  for="length-two">mm</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2">
+                                <label for="width-two">宽</label>
+                                <input  class="text-box" type="text" name="box-dimensions" id="width-two" >
+                                <label  for="width-two">mm</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-2">
+                                <label for="height-two">高</label>
+                                <input  class="text-box" type="text" name="box-dimensions" id="height-two" >
+                                <label  for="height-two">mm</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 details">
+                        <select class="sprite1"><option>详细情况</option></select>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-material">
+            <div class="col-xs-12 box-style">
+                <span class="sprite1 sprite-img"></span>
+                <span>选择材质</span>
+            </div>
+        </div>
+
+        <div class="row row-four">
+            <div class="col-xs-12">
+                <div class="row " style="padding-left: 40px">
+                    <div class="col-xs-6  col-sm-4 col-md-2 style" >
+                        <input class="radios" type="radio" name="box-material" id="a1" checked="checked">
+                        <label class="radios sprite1" for="a1">三层A瓦优质</label>
+                    </div>
+                    <div class="col-xs-6  col-sm-4 col-md-2 style">
+                        <input class="radios" type="radio" name="box-material" id="a2" checked="checked">
+                        <label class="radios sprite1" for="a2">三层A瓦优质</label>
+                    </div>
+                    <div class="col-xs-6  col-sm-4 col-md-2 style">
+                        <input class="radios" type="radio" name="box-material" id="a3" checked="checked">
+                        <label class="radios sprite1" for="a3">三层A瓦优质</label>
+                    </div>
+                    <div class="col-xs-6  col-sm-4 col-md-2 style">
+                        <input class="radios" type="radio" name="box-material" id="a4" checked="checked">
+                        <label class="radios sprite1" for="a4">三层A瓦优质</label>
+                    </div>
+                    <div class="col-xs-6  col-sm-4 col-md-2 style">
+                        <input class="radios" type="radio" name="box-material" id="a5" checked="checked">
+                        <label class="radios sprite1" for="a5">三层A瓦优质</label>
+                    </div>
+                    <div class="col-xs-6  col-sm-4 col-md-2 details">
+                        <select class="sprite1"><option>详细情况</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-five">
+            <input type="submit" value="下一步">
+        </div>
+    </div>
+</div>
+<!--Main End-->
+
+<!--Start footer-->
+<div class="footer bg-white dim">
+    <div class="footer-top">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-4 col-one">
+                    <p class="font-x">三三五五-纸箱包装首选服务平台</p>
+                </div>
+                <div class="col-sm-4 col-two">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="list-unstyled list-inline">
+                                <li class="about-us"><a href="javascript:void(0);">关于我们</a></li>
+                                <li><a href="javascript:void(0);">配送流程</a></li>
+                                <li><a href="javascript:void(0);">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12">
+                            <ul class="list-unstyled list-inline">
+                                <li><a href="javascript:void(0);">下单指南</a></li>
+                                <li><a href="javascript:void(0);">媒体介绍</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-three">
+                    <ul class="list-unstyled list-inline text-right">
+                        <li>
+                            <p>TEL:15881615657</p>
+                            <p>QQ:1276837689</p>
+                            <p>微信号:singcl008</p>
+                        </li>
+                        <li class="img" style="max-width: 80px"><img src="img/share.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom casing bg-blue">
+        <div class="container">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <li>广州三三五五科技有限公司Copyright©2016</li>
+                            <li>www.imvico.com</li>
+                            <li>All rights reserved</li>
+                            <li>粤icp备66666666-1</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End footer-->
+</div>
+
+
+
+
+

@@ -1,0 +1,34 @@
+<div class="container w-xxl w-auto-xs" ng-init="app.settings.container=false;app.settings.asideDock=false;" ng-controller="SigninFormController">
+	<a href class="navbar-brand block">{{app.name}}</a>
+	<div class="m-b-lg">
+		<div class="wrapper text-center">
+			<strong>Angular&Bootstrap</strong>
+		</div>
+		<form name="form" class="form-validation">
+			<div class="text-danger wrapper text-center" ng-show="authError">
+				{{authError}}
+			</div>
+			<div class="list-group list-group-sm">
+				<div class="list-group-item">
+					<input type="email" placeholder="默认Email:mhd@163.com" name="email" class="form-control no-border" ng-model="user.email" required>
+					<span class="error-icon" ng-show="form.email.$dirty&&form.email.$invalid">
+						<i class="error fa fa-close" ng-show="form.email.$error.required"></i>
+					</span>
+				</div>
+				<div class="list-group-item">
+					<input type="password" placeholder="默认password:任意即可" name="password" class="form-control no-border" ng-model="user.password" required>
+					<span class="error-icon" ng-show="form.password.$dirty&&form.password.$invalid">
+						<i class="error fa fa-close" ng-show="form.password.$error.required"></i>
+					</span>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="login()" ng-disabled="form.$invalid">登录</button>
+			<div class="text-right m-b m-t"><a href ui-sref="access.forgotpwd">忘记密码？</a></div>
+			<div class="line line-dashed"></div>
+			<p class="text-center"><small>没有账户？</small></p>
+			<a href ui-sref="access.signup" class="btn btn-lg btn-default btn-block m-b">创建账户</a>
+			<a href ui-sref="app.v1" class="btn btn-lg btn-success btn-block">先逛逛再说</a>
+		</form>
+	</div>
+	<div class="text-center" ng-include="'tpl/blocks/page_footer.html'"></div>
+</div>

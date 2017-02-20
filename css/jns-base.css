@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.header.jns {
+	padding: 0.5% 0;
+	font-size: 1.5rem;
+	color: #42b683;
+	background-color: #fff;
+	
+}
+
+.m-b-none {
+	margin-bottom: 0!important;
+}
+
+.header.jns ul > li.sprite {
+	width: 25px;
+	height: 24px;
+	margin-left: 2%;
+	vertical-align: middle;
+}
+
+.sprite {background: url(../images/sprite.png) no-repeat;}
+/*../表示相对路径的上一级目录 ../../表示相对路径的上两级目录，以此类推。 /表示根目录。*/
+
+.jns .qq {background-position: 15% 0%}
+
+.jns .weibo {background-position: 30% 0%}
+
+/*a[class="navbar-brand"] {height: auto;}*/
+
+/*Nav Start*/
+
+nav.jns {background-color: #29b078;}
+
+nav.jns button {
+  margin-top: 0;
+  padding: 3px 10px;
+}
+
+.mynavbar-header a {line-height: 5.55;}
+
+@media (min-width: 768px) {
+  .mynavbar-header {
+     width: auto!important;
+    }
+}
+
+ .mynav>li>a:link,
+ .mynav>li>a:visited,
+ .mynav>li>a:hover,
+ .mynav>li>a:active
+ {color: #fff;}
+
+.mynav>li>a:focus, /*靠!就是你!! 认真看W3C*/
+.mynav>li>a:hover
+{background-color: transparent!important;}
+/*尼玛！！找了一天才发现是focus伪类。。这个为获得焦点的元素添加样式！上面两个伪类bootstrap默认background-color为#eee!草！*/
+
+.mynav { margin-right: -2rem; }
+
+.mynav > li {
+	padding: 0 1.6rem 0 1.6rem; /* 这里的padding不能设置为百分数！不然li在浮动过程中会掉下去！！*/
+	border-bottom: 5px solid transparent;
+	margin:0 .4rem 0 .4rem;
+}
+
+.mynav li > a {
+	font-size: 1.65rem;
+	line-height: 260%;
+}
+
+.mynav li:hover {border-bottom: 5px solid #fff;}
+
+.mynav li:hover a {color: #fce734;}
+
+li.current-page{border-bottom:5px solid #fff;}
+
+@media (max-width: 768px) {
+	.mynavbar-header a {line-height: 5;}
+
+	.mynav li {border-bottom: none;}
+
+	.mynav li:hover {border-bottom-style: none;}
+
+	.mynav { margin-right: -15px; }
+}
+
+/*Nav Een*/
+
+/*Start footer*/
+
+.footer.jns {
+	padding-top:2%;
+	color: #fff;
+ 	background-color: #26a26f; 
+ }
+
+.footer-top.jns p {font-size: 1.6rem;}
+
+.footer-top-left.jns ul {line-height: 600%;}
+
+.footer-top-left.jns span {
+	padding:0 .8rem;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+
+.footer-top-middle.jns {line-height: 180%;}
+
+.footer-top-middle.jns span{
+	padding-bottom: .5rem;
+	border-bottom: 2px solid #fff;
+}
+
+.footer-top-right.jns {
+	padding-right: 7%;
+	text-align: right;
+}
+
+ .footer-bottom.jns {
+ 	text-align: center;
+ 	padding: 0.7% 0;
+ 	margin-top: 1%;
+ 	border-top: 1px solid #32c086
+ }
+
+ .footer-bottom.jns p{margin-bottom: 0;}
+
+ @media (max-width: 768px){
+ 	.footer-top-left.jns ul {line-height: 200%;}
+
+ 	.footer-top-right.jns {
+ 		float: left;
+ 	}
+ }
+
+/* footer End*/

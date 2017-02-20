@@ -1,0 +1,63 @@
+<div class="aside-wrap">
+<!-- if you want to use a custom scroll when aside fixed, use the slimScroll
+<div class="navi-wrap" ui-jq="slimScroll" ui-options="{height:'100%', size:'8px'}">
+-->
+	<div class="navi-wrap">
+	    <!-- user -->
+	    <div class="clearfix text-center hidden-xs hide" id="aside-user">
+	    	<div class="dropdown wrapper" dropdown>
+	    		<a ui-sref="app.page.profile">
+	    			<span class="thumb-lg avatar m-t-sm w-auto-folded">
+	    				<img src="./img/mhd.jpg" class="img-full" alt="...">
+	    			</span>
+	    		</a>
+	    		<a class="dropdown-toggle hidden-folded" dropdown-toggle>
+	    			<span class="clear">
+	    				<span class="block m-t-sm">
+	    					<strong class="font-bold text-lt">Jing.Miao</strong>
+	    					<b class="caret"></b>
+	    				</span>
+	    				<span class="text-muted text-xs block">Beautiful Girl</span>
+	    			</span>
+	    		</a>
+	    		<!-- dropdown menu -->
+	    		<ul class="dropdown-menu animated fadeInRight w hidden-folded" dropdown-menu>
+	    			<li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+	    				<span class="top arrow hidden-folden arrow-info"></span>
+	    				<div><p>300MB/500MB</p></div>
+	    				<progressbar class="progress-striped active progress-xs m-b-none dker" type="success" value="56"></progressbar>
+	    			</li>
+	    			<li><a href>设置</a></li>
+	    			<li><a href>简介</a></li>
+	    			<li><a href><b class="badge bg-info pull-right">2</b>通知</a></li>
+	    			<li class="divider"></li>
+	    			<li><a href>退出</a></li>
+	    		</ul>
+	    		<!-- / dropdown menu -->
+	    	</div>
+	    	<div class="line dk hidden-folded"></div>
+	    </div>
+        <!-- user -->
+
+	    <!-- nav -->
+	    <nav ui-nav x-ng-include="'tpl/blocks/nav.html'" class="navi"></nav>
+	    <!--/ nav -->
+    
+        <!--  aside footer -->
+        <div class="wrapper m-t">
+    	    <div class="text-center-folded">
+    	    	<span class="pull-right pull-none-folded">59%</span>
+    	    	<span class="hidden-folded">Wangyunzi</span>
+    	    </div>
+    	    <progressbar class="progress-striped active progress-xxs m-t-sm" value="59" type="info"></progressbar>
+    	    <div class="text-center-folded">
+    	    	<span class="pull-right pull-none-folded">32%</span>
+    	    	<span class="hidden-folded">Rongyun</span>
+    	    </div>
+    	    <div class="progress progress-xxs m-t-sm">
+    	    	<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 32%"></div>
+    	    </div>
+        </div>
+        <!--  / aside footer -->
+	</div>
+</div>

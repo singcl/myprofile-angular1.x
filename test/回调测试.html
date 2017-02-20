@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+"use strict";
+function test2(callback){
+	var k=3;
+	var m={ee:12,hh:32};
+	callback && (typeof(callback)=="function") && callback.apply(m,[m.ee,m.hh]);
+	//函数对象的call和apply方法改变函数的执行环境（execution context），改变函数的调用对象
+}
+
+function test(value,test1){
+    alert(value + test1);    
+}
+
+test2(function(a,b) {    //fuction(a,b) 才是回调函数，在其内部又引用了另一个函数test().这样写太麻烦了
+	test(a,b);
+});
+</script>
+</body>
+</html>

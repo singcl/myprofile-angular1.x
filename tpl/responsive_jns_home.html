@@ -1,0 +1,308 @@
+<div ng-init="app.settings.headerFixed=false;
+              app.settings.container = false;">
+<!-- <img src="..." class="img-responsive" alt="响应式图像"> -->
+<!-- header Start -->
+<div class="header jns">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4"><span>联系电话：15881615657</span></div>
+			<div class="col-sm-8 hidden-xs text-right" >
+				<ul class="list-inline m-b-none">
+					<li class="sprite weixin"></li>
+					<li class="sprite qq"></li>
+					<li class="sprite weibo"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header End -->
+
+<!-- Nav Start -->
+<nav class="jns" role="navigation">
+	<div class="container" >
+		<div class="row">
+			<div class="col-sm-4 navbar-header mynavbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+			         <span class="sr-only">切换导航</span>
+			         <span class="glyphicon glyphicon-th-list" style="color: rgb(119, 85, 135); font-size: 29px;"></span>
+		     	 </button>
+				<a href="#"><img src="images/navbar-header.png" alt="葡萄藤LOGO"></a>
+			</div>
+			<div class="col-sm-8 collapse navbar-collapse navbar-right" id="example-navbar-collapse" ><!-- 组件对齐方式navbar-方向关键词 -->
+				<ul class=" mynav nav navbar-nav text-center">  <!-- 文本对齐方式text-方向关键词 -->
+					<li class="current-page"><a href="javascript:void(0);"><span>首页</span></a></li>
+					<li><a href ui-sref="responsive.jnsdetail">职业</a></li>
+					<li><a href ui-sref="responsive.jnsrecommend">推荐</a></li>
+					<li><a href ui-sref="app.page.profile">About Me</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+	<!-- 导航结束 Nav End -->
+
+	<!-- Carousel Start -->
+<div class="mybanner">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" cycle-carousel>
+  		 <!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+	    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    	<li data-target="#myCarousel" data-slide-to="1"></li>
+	    	<li data-target="#myCarousel" data-slide-to="2"></li>
+	    	<li data-target="#myCarousel" data-slide-to="3"></li>
+	   	</ol>
+ 		  <!-- 轮播（Carousel）项目 -->
+	   	<div class="carousel-inner">
+	   		<div class="item active">
+	   			<img src="images/banner-1.jpg" alt="first slide">
+	   		</div>
+	   		<div class="item">
+	   			<img src="images/banner-2.jpg" alt="second slide">
+	   		</div>
+	   		<div class="item">
+	  			<img src="images/banner-3.jpg" alt="third slide">
+	   		</div>
+	   		<div class="item">
+	  			<img src="images/banner-4.jpg" alt="forth slide">
+	   		</div>
+	   </div>
+	   	<!-- 轮播（Carousel）导航  和ui-bootstrap冲突？？？-->
+	   	<!-- <a class="carousel-control left" href="#myCarousel"
+	      data-slide="prev"><span class="glyphicon glyphicon-chevron-left" style="color: rgb(144, 139, 157);"></span></a>
+	   	<a class="carousel-control right" href="#myCarousel" 
+	      data-slide="next"><span class="glyphicon glyphicon-chevron-right" style="color: rgb(144, 139, 157);"></span></a> -->
+	</div> 
+</div>
+<!-- 轮播图结束Carousel End -->
+
+<!-- Main Start -->
+<div class="main jnshome">
+	<div class="container">
+		<div class="row row-one">
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="sprite efficient"></div>
+				<h4>高效</h4>
+				<p class="text-left">我们秉承高校的服务服务于所有顾客。</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="sprite standard"></div>
+				<h4>规范</h4>
+				<p class="text-center">规范化的操作流程。</p>
+			</div>
+
+			<div class="clearfix visible-xs visible-sm"></div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-three">
+				<div class="sprite renmai"></div>
+				<h4>交流</h4>
+				<p class="text-left">顾客之间相互交流。相互了解。</p>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-four" >
+				<p class="learn"><span class="sprite"></span>12440</p>
+				<p class="xueyuan">累计浏览人数</p>
+				<p class="learn"><span class="sprite"></span>6666</p>
+				<p class="xueyuan">当前在线人数</p>
+			</div>
+
+		</div>
+
+		<!-- Row one End,next row two -->
+
+		<div class="row row-two jnshome">
+			<h4>购物流程</h4>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">1</span>
+				<span class="content">注册登录</span>
+				<span class="arrow-jns sprite"></span>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">2</span>
+				<span class="content">搜索商品</span>
+				<span class="arrow-jns sprite"></span>
+			</div>
+
+			<!-- <div class="clearfix visible-xs visible-sm"></div> -->
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">3</span>
+				<span class="content">浏览加入购物车</span>
+				<span class="arrow-jns sprite"></span>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">4</span>
+				<span class="content">继续搜索/浏览商品</span>
+				<span class="arrow-jns sprite visible-xs-inline-block visible-sm-inline-block "></span>
+				<!-- 详解见bootstrap响应式实用工具一节 -->
+			</div>
+		</div>
+
+		<div class="row row-two jnshome">
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">5</span>
+				<span class="content">计入购物车</span>
+				<span class="arrow-jns sprite"></span>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">6</span>
+				<span class="content">一并提交订单</span>
+				<span class="arrow-jns sprite"></span>
+			</div>
+
+			<!-- <div class="clearfix visible-xs visible-sm"></div> -->
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">7</span>
+				<span class="content">付款等待发货</span>
+				<span class="arrow-jns sprite"></span>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<span class="number">8</span>
+				<span class="content">收货后相互评价</span>
+				<span class="arrow-jns sprite visible-xs-inline-block visible-sm-inline-block"></span>
+				<!-- 定制字体图标 -->
+			</div>
+		</div>
+
+		<!-- Row two End. Next Row Three -->
+
+		<div class="row row-three">
+			<h4 class="good">高级会员展示</h4>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+				<div class="excellence">
+					<div class="img"><img src="images/person-first.png" class="img-circle"></div>
+					<h4>黄金会员：王宝强</h4>
+					<p>王宝强6岁开始练习武术，8岁在嵩山少林寺做俗家弟子。2003年凭借独立电影《盲井》获得第40届台湾电影金马奖最佳新演员奖[1-2]。2004年因参演冯小刚的贺岁剧《天下无贼》而获得关注。</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="excellence">
+					<div class="img"><img src="images/person-second.png " class="img-circle"></div>
+					<h4>白银会员：王宝强</h4>
+					<p>王宝强6岁开始练习武术，8岁在嵩山少林寺做俗家弟子。2003年凭借独立电影《盲井》获得第40届台湾电影金马奖最佳新演员奖[1-2]。2004年因参演冯小刚的贺岁剧《天下无贼》而获得关注。</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="excellence">
+					<div class="img"><img src="images/person-third.png " class="img-circle"></div>
+					<h4>青铜会员：王宝强</h4>
+					<p>王宝强6岁开始练习武术，8岁在嵩山少林寺做俗家弟子。2003年凭借独立电影《盲井》获得第40届台湾电影金马奖最佳新演员奖[1-2]。2004年因参演冯小刚的贺岁剧《天下无贼》而获得关注。</p>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="excellence">
+					<div class="img"><img src="images/person-third.png " class="img-circle"></div>
+					<h4>普通会员：王宝强</h4>
+					<p>王宝强6岁开始练习武术，8岁在嵩山少林寺做俗家弟子。2003年凭借独立电影《盲井》获得第40届台湾电影金马奖最佳新演员奖[1-2]。2004年因参演冯小刚的贺岁剧《天下无贼》而获得关注。</p>
+				</div>
+			</div>
+
+			<ul class="dot">
+				<li style="background-color: #29b078"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+		<!-- Row three End. Next Row Four -->
+		<div class="row row-four">
+			<h4>战略合作伙伴</h4>
+			<div class="col-xs-12">
+				<ul class="clearfix text-center">
+					<li><span style="background-position: 0%;"></span></li>
+					<li><span style="background-position: 20.5%;"></span></li>
+					<li><span style="background-position: 44%;"></span></li>
+					<li><span style="background-position: 75%;"></span></li>
+					<li><span style="background-position: 102%;"></span></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Row four End. Next Row five -->
+
+		<div class="row row-five">
+			<h4>友情链接</h4>
+			<div class="col-xs-12">
+				<ul class="clearfix">
+					<li class="underline"><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">教师招聘</a></li>
+					<li><a href="#" target="_blank">找工作</a></li>
+					<li><a href="#" target="_blank">教师招聘</a></li>
+					<li><a href="#" target="_blank">找工作</a></li>
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">教师招聘</a></li>
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">找工作</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row row-five">
+			<div class="col-xs-12">
+				<ul class="clearfix">
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">教师招聘</a></li>
+					<li><a href="#" target="_blank">找工作</a></li>
+					<li><a href="#" target="_blank">教师招聘</a></li>
+					<li><a href="#" target="_blank">找工作</a></li>
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">教师招聘</a></li>
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">手机软件</a> </li>
+					<li><a href="#" target="_blank">找工作</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Row five End. -->
+	</div>
+	<!-- Container  End -->
+</div>
+<!-- Main End -->
+
+	<!-- Footer Start -->
+<div class="footer jns">
+	<div class="container footer-top jns">
+		<div class="row">
+			<div class="col-sm-5 footer-top-left jns">
+				<p>购物网——改变你我</p>
+				<ul class="list-inline">
+					<li>关于我们</li>
+					<li ><span>联系我们</span></li>
+					<li>合作企业</li>
+				</ul>
+			</div>
+			<div class="col-sm-4 footer-top-middle jns">
+				<p>旗下网站</p>
+				<ul class="list-inline">
+					<li><span>微微购物</span></li>
+					<li>轻购物</li>
+				</ul>
+				<ul class="list-inline">
+					<li>好多购物</li>
+					<li>优质购物</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 footer-top-right jns">
+				<p>微信公共平台</p>
+				<img src="images/share.png" style="max-width: 100px;">
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom jns">
+		<p class="text-center">Copyright © 2016 广州一二三四五有限公司 All Rights Reserved | 粤ICP备15325574号-1</p>
+	</div>
+</div>
+<!-- Footer End -->
+</div>
